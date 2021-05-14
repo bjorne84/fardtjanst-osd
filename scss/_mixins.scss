@@ -1,0 +1,15 @@
+/* for responsive*/
+$padda: 500px;
+$desktop: 960px;
+@mixin padda {
+    @media (min-width: #{$padda}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+

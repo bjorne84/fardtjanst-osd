@@ -1,0 +1,30 @@
+@use '_fonts.scss' as *;
+@use '_colors.scss' as *;
+
+// Buttons
+.btnText {
+    font-family: $infoText;
+    font-size: 1rem; 
+    color:$headerGrey1;
+}
+
+
+.expandSearchBtn {
+    background-color: $btnBackgroundGrey;
+    border: none;
+    border-radius: 0.2em;
+    margin-top: 4px;
+    padding-top: 4px;
+    padding-right: 14px;
+    padding-left: 14px;
+    cursor: pointer;
+}
+
+
+.hamburgerBtn {
+    background-color: $themeBlue;
+    padding-top: 1em;
+    padding-bottom: 0.4em;      
+    border: none;
+    cursor: pointer;
+}

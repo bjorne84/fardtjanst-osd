@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37.298" viewBox="0 0 37 37.298">
+  <g id="Calendar" transform="translate(0.107)">
+    <rect id="Rectangle_557" data-name="Rectangle 557" width="37" height="37" transform="translate(-0.107 0.298)" fill="none"/>
+    <path id="Path_149" data-name="Path 149" d="M4.6,11.5V32.187H32.187V11.5Zm25.29-6.9h4.6a2.172,2.172,0,0,1,2.3,2.3V34.487a2.172,2.172,0,0,1-2.3,2.3H2.3a2.172,2.172,0,0,1-2.3-2.3V6.9A2.172,2.172,0,0,1,2.3,4.6H6.9V2.3A2.172,2.172,0,0,1,9.2,0a2.172,2.172,0,0,1,2.3,2.3V4.6H25.29V2.3a2.3,2.3,0,1,1,4.6,0Zm-2.3,22.991h-4.6v-4.6h4.6Zm-6.9,0h-4.6v-4.6h4.6Zm6.9-6.9h-4.6v-4.6h4.6Zm-6.9,0h-4.6v-4.6h4.6Zm-6.9,6.9H9.2v-4.6h4.6Z" fill="#f15a1c"/>
+  </g>
+</svg>

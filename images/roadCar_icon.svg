@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330.803" height="90.294" viewBox="0 0 330.803 90.294">
+  <g id="roadCar_icon" transform="translate(-1171.25 -2017.23)">
+    <g id="Väg" transform="translate(1171.25 2017.23)">
+      <path id="Path_19" data-name="Path 19" d="M470.814,546.7H192.752a26.678,26.678,0,0,1,0-53.355H470.2a10.261,10.261,0,0,0,0-20.521H183.517V456.409H470.2a26.678,26.678,0,0,1,0,53.355H192.752a10.261,10.261,0,1,0,0,20.521H470.814Z" transform="translate(-166.074 -456.409)" fill="#e6e6e6"/>
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="12.723" height="0.821" transform="translate(27.704 7.798)" fill="#fff"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="12.723" height="0.821" transform="translate(63.821 7.798)" fill="#fff"/>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="12.723" height="0.821" transform="translate(99.939 7.798)" fill="#fff"/>
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="12.723" height="0.821" transform="translate(136.056 7.798)" fill="#fff"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="12.723" height="0.821" transform="translate(172.173 7.798)" fill="#fff"/>
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="12.723" height="0.821" transform="translate(208.291 7.798)" fill="#fff"/>
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="12.723" height="0.821" transform="translate(244.408 7.798)" fill="#fff"/>
+      <rect id="Rectangle_8" data-name="Rectangle 8" width="12.723" height="0.821" transform="translate(280.526 7.798)" fill="#fff"/>
+      <rect id="Rectangle_9" data-name="Rectangle 9" width="12.723" height="0.821" transform="translate(27.704 44.736)" fill="#fff"/>
+      <rect id="Rectangle_10" data-name="Rectangle 10" width="12.723" height="0.821" transform="translate(63.821 44.736)" fill="#fff"/>
+      <rect id="Rectangle_11" data-name="Rectangle 11" width="12.723" height="0.821" transform="translate(99.939 44.736)" fill="#fff"/>
+      <rect id="Rectangle_12" data-name="Rectangle 12" width="12.723" height="0.821" transform="translate(136.056 44.736)" fill="#fff"/>
+      <rect id="Rectangle_13" data-name="Rectangle 13" width="12.723" height="0.821" transform="translate(172.173 44.736)" fill="#fff"/>
+      <rect id="Rectangle_14" data-name="Rectangle 14" width="12.723" height="0.821" transform="translate(208.291 44.736)" fill="#fff"/>
+      <rect id="Rectangle_15" data-name="Rectangle 15" width="12.723" height="0.821" transform="translate(244.408 44.736)" fill="#fff"/>
+      <rect id="Rectangle_16" data-name="Rectangle 16" width="12.723" height="0.821" transform="translate(280.526 44.736)" fill="#fff"/>
+      <rect id="Rectangle_17" data-name="Rectangle 17" width="12.723" height="0.821" transform="translate(27.704 81.675)" fill="#fff"/>
+      <rect id="Rectangle_18" data-name="Rectangle 18" width="12.723" height="0.821" transform="translate(63.821 81.675)" fill="#fff"/>
+      <rect id="Rectangle_19" data-name="Rectangle 19" width="12.723" height="0.821" transform="translate(99.939 81.675)" fill="#fff"/>
+      <rect id="Rectangle_20" data-name="Rectangle 20" width="12.723" height="0.821" transform="translate(136.056 81.675)" fill="#fff"/>
+      <rect id="Rectangle_21" data-name="Rectangle 21" width="12.723" height="0.821" transform="translate(172.173 81.675)" fill="#fff"/>
+      <rect id="Rectangle_22" data-name="Rectangle 22" width="12.723" height="0.821" transform="translate(208.291 81.675)" fill="#fff"/>
+      <rect id="Rectangle_23" data-name="Rectangle 23" width="12.723" height="0.821" transform="translate(244.408 81.675)" fill="#fff"/>
+      <rect id="Rectangle_24" data-name="Rectangle 24" width="12.723" height="0.821" transform="translate(280.526 81.675)" fill="#fff"/>
+    </g>
+    <g id="car" transform="translate(1399.148 2066.648)">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="7.337" height="1.165" transform="matrix(-1, -0.001, 0.001, -1, 60.38, 29.408)" fill="#3f3d56"/>
+      <path id="Path_30" data-name="Path 30" d="M770.332,615.939l1.514.35,57.528.031.517-1.205a12.165,12.165,0,0,0,.894-6.578c-.248-1.665-.869-3.319-2.279-4.037l-2.553-17-31.828-.057-12.314,9.932s-5.809-.1-8.964,3.824a9.221,9.221,0,0,0-1.929,5.079l-.125,2.044Z" transform="translate(-770.332 -587.439)" fill="#249aff"/>
+      <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="7.104" cy="7.104" rx="7.104" ry="7.104" transform="translate(5.531 21.112)" fill="#3f3d56"/>
+      <ellipse id="Ellipse_8" data-name="Ellipse 8" cx="3.739" cy="3.739" rx="3.739" ry="3.739" transform="translate(8.896 24.477)" fill="#ccc"/>
+      <ellipse id="Ellipse_9" data-name="Ellipse 9" cx="7.104" cy="7.104" rx="7.104" ry="7.104" transform="translate(40.584 21.131)" fill="#3f3d56"/>
+      <ellipse id="Ellipse_10" data-name="Ellipse 10" cx="3.739" cy="3.739" rx="3.739" ry="3.739" transform="translate(43.949 24.496)" fill="#ccc"/>
+      <path id="Path_31" data-name="Path 31" d="M656.92,395.17l17.184.007h2.1l3.541,0v-.258l0-3.115,0-3.5h-2.356l-2.1,0-3.716,0h-2.1l-4.29,0Z" transform="translate(-640.547 -386.398)" fill="#fff"/>
+      <path id="Path_32" data-name="Path 32" d="M724.849,395.2l9.082,0,0-1.782v-3.115l0-1.973h-1.33l-2.1,0-5.657,0Z" transform="translate(-682.856 -386.415)" fill="#fff"/>
+      <rect id="Rectangle_26" data-name="Rectangle 26" width="1.165" height="2.213" transform="matrix(-1, -0.001, 0.001, -1, 39.192, 16.12)" fill="#3f3d56"/>
+      <rect id="Rectangle_27" data-name="Rectangle 27" width="1.165" height="2.213" transform="matrix(-0.001, 1, -1, -0.001, 21.031, 10.753)" fill="#3f3d56"/>
+      <path id="Path_33" data-name="Path 33" d="M0,0H.128A2.434,2.434,0,0,1,2.562,2.434h0A2.434,2.434,0,0,1,.128,4.868H0Z" transform="matrix(-1, -0.001, 0.001, -1, 20.213, 11.266)" fill="#3f3d56"/>
+      <path id="Path_34" data-name="Path 34" d="M771.559,631.035a3.762,3.762,0,0,0,2.053-7.122,9.221,9.221,0,0,0-1.929,5.079Z" transform="translate(-771.096 -610.156)" fill="#3f3d56"/>
+      <path id="Path_35" data-name="Path 35" d="M705.639,388.316l4.449,6.614,0-3.115-2.354-3.5Z" transform="translate(-670.891 -386.407)" fill="#f2f2f2"/>
+      <path id="Path_36" data-name="Path 36" d="M739.854,388.335l3.425,5.09v-3.115l-1.327-1.973Z" transform="translate(-692.202 -386.419)" fill="#f2f2f2"/>
+      <path id="Path_37" data-name="Path 37" d="M690.225,388.309l4.623,6.872h2.1l-4.623-6.872Z" transform="translate(-661.291 -386.403)" fill="#f2f2f2"/>
+    </g>
+  </g>
+</svg>

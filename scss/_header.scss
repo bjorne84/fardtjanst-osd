@@ -1,0 +1,73 @@
+@use '_index.scss' as *;
+
+nav {
+    ul {
+        list-style: none;
+    }
+}
+
+.menuText {
+    color: aqua;
+}
+
+
+
+.mobileTopLine {
+    height: 7px;
+    background-color: $themeBlue;
+    width: 100%;
+}
+
+/* Wrapps logo, search, and hamburger icon*/
+.mainHeaderArea1 {
+    display: flex;
+    max-height: 100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: $backgroundGrey;
+}
+
+.logoWrapper {
+    a {
+        img {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 3px;
+            max-height: 60px;
+        }
+    }
+}
+
+/* searchbox*/
+/* Div that wraps the input fields*/
+.inputWrapper {
+    position: relative;
+    height: 1.7em;
+    display: none;
+  }
+  
+  
+  .inputLabel {
+    position: absolute;
+    left: 0.3em;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .inputField {
+    height: 100%;
+    padding: 0 .2em;
+  }
+  
+  /* NEW CODE */
+  .inputField:focus ~ .inputLabel,
+  .inputField:not(:placeholder-shown) ~ .inputLabel{
+    z-index: -1;
+  }
+
+  .w {
+    background-color: $btnBackgroundGrey;
+  }
+ 
+  
+

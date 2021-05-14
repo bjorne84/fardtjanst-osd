@@ -1,0 +1,7 @@
+@use '_fonts.scss' as *;
+.maxWidth {
+    max-width: 1220px;
+}
+.body {
+    font-family: $infoText;
+}

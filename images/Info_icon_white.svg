@@ -1,0 +1,10 @@
+<svg id="Info_icon" xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66">
+  <circle id="Ellipse_24" data-name="Ellipse 24" cx="33" cy="33" r="33" fill="#fff"/>
+  <g id="Information" transform="translate(18 18)">
+    <rect id="Rectangle_280" data-name="Rectangle 280" width="31" height="31" transform="translate(0 0)" fill="none"/>
+    <g id="Union_6" data-name="Union 6" transform="translate(9.569 0.004)">
+      <circle id="Ellipse_110" data-name="Ellipse 110" cx="3" cy="3" r="3" transform="translate(1.431 -0.003)" fill="#2699fb"/>
+      <path id="Path_112" data-name="Path 112" d="M7.655,23.138V4H0V7.828H3.828v15.31H0v3.828H11.483V23.138Z" transform="translate(0 3.655)" fill="#2699fb"/>
+    </g>
+  </g>
+</svg>
