@@ -23,6 +23,7 @@ body, h1, h2, h3, h4, p, a, ul[class], ol[class], li, figure, figcaption, blockq
 /* Set core body defaults */
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
@@ -69,13 +70,14 @@ ul {
 }
 
 .body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
 }
 
 .btnText {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #4B4B4B;
+  font-weight: 600;
 }
 
 .expandSearchBtn {
@@ -87,14 +89,33 @@ ul {
   padding-right: 14px;
   padding-left: 14px;
   cursor: pointer;
+  margin-right: 0.6em;
 }
 
 .hamburgerBtn {
   background-color: #0859A1;
-  padding-top: 1em;
-  padding-bottom: 0.4em;
+  padding: 1em;
   border: none;
   cursor: pointer;
+}
+
+.spanInfoBtnText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #4B4B4B;
+}
+
+.logOutBtn {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+}
+.logOutBtn img {
+  max-height: 20px;
 }
 
 nav ul {
@@ -120,9 +141,16 @@ nav ul {
   background-color: #F3F3F3;
 }
 
+.searchAndMenuWrapper {
+  display: flex;
+  max-width: 15em;
+  justify-content: space-between;
+  min-width: 8em;
+}
+
 .logoWrapper a img {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   margin-left: 3px;
   max-height: 60px;
 }
@@ -153,12 +181,61 @@ nav ul {
   z-index: -1;
 }
 
-.w {
-  background-color: #E5E5E5;
+.navHolder {
+  display: none;
 }
 
-body {
-  background-color: #C4DCEE;
+.menuText {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0859A1;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.blueLine {
+  width: 100%;
+  height: 1em;
+  background-color: #0859A1;
+}
+
+.topBar {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.rightHolderTopBar {
+  min-width: 11em;
+}
+
+.extraInfoWrapper {
+  background-color: #FBF2EA;
+  border: dotted #EE3F3F 3px;
+  display: flex;
+  padding: 0.3em;
+}
+
+.warningIconWrapper img {
+  min-width: 3em;
+  height: 100%;
+}
+
+.infoTextWrapper {
+  margin-left: 1em;
+}
+.infoTextWrapper h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  float: left;
+}
+.infoTextWrapper p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  float: left;
+  padding-left: 0.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,8 @@
 @use '_fonts.scss' as *;
+@use '_colors.scss' as *;
 .maxWidth {
     max-width: 1220px;
 }
 .body {
-    font-family: $infoText;
+    background-color: $bodyColor;
 }

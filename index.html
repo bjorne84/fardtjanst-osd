@@ -23,70 +23,43 @@
               />
             </a>
           </div>
-          <div class="searchWrapper">
-            <form class="searchForm">
-              <div class="inputWrapper">
-                <input
-                  type="text"
-                  id="searchInput"
-                  class="inputField"
-                  placeholder=" "
-                />
-                <label
-                  id="searchInputLabel"
-                  for="searchInput"
-                  class="inputLabel"
-                  >Sök</label
+          <div class="searchAndMenuWrapper">
+            <div class="searchWrapper">
+              <form class="searchForm">
+                <div class="inputWrapper">
+                  <input
+                    type="text"
+                    id="searchInput"
+                    class="inputField"
+                    placeholder=" "
+                  />
+                  <label
+                    id="searchInputLabel"
+                    for="searchInput"
+                    class="inputLabel"
+                    >Sök</label
+                  >
+                </div>
+                <button
+                  class="expandSearchBtn"
+                  aria-label="Sök"
+                  aria-expanded="false"
                 >
-              </div>
-              <button
-                class="expandSearchBtn"
-                aria-label="Sök"
-                aria-expanded="false"
-              >
+                  <img
+                    src="images/search_orange.svg"
+                    alt="Förstoringsglas till sökknapp"
+                  /><span class="btnText">Sök</span>
+                </button>
+              </form>
+            </div>
+            <div class="hamburgerWrapper">
+              <button class="hamburgerBtn btnText" aria-expanded="false">
                 <img
-                  src="images/search_orange.svg"
-                  alt="Förstoringsglas till sökknapp"
-                /><span class="btnText">Sök</span>
+                  src="images/HamburgerMenu.svg"
+                  alt="Menyknapp, öppna meny"
+                />
               </button>
-            </form>
-          </div>
-          <div class="hamburgerWrapper">
-            <button class="hamburgerBtn btnText" aria-expanded="false">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="41"
-                height="36"
-                viewBox="0 0 41 36"
-              >
-                <g id="Menu" transform="translate(-0.144)">
-                  <rect
-                    id="Rectangle_4"
-                    data-name="Rectangle 4"
-                    width="41"
-                    height="5"
-                    transform="translate(0.144)"
-                    fill="#fff"
-                  />
-                  <rect
-                    id="Rectangle_5"
-                    data-name="Rectangle 5"
-                    width="41"
-                    height="6"
-                    transform="translate(0.144 15)"
-                    fill="#fff"
-                  />
-                  <rect
-                    id="Rectangle_6"
-                    data-name="Rectangle 6"
-                    width="26"
-                    height="5"
-                    transform="translate(0.144 31)"
-                    fill="#fff"
-                  />
-                </g>
-              </svg>
-            </button>
+            </div>
           </div>
         </div>
         <div class="navHolder">
@@ -101,6 +74,39 @@
               </li>
             </ul>
           </nav>
+          <div class="blueLine"></div>
+        </div>
+        <!-- End mainHeaderWrapper-->
+      </div>
+      <!-- Full Max width-->
+      <div class="topBarContainer">
+        <!-- Max width 1220px-->
+        <div class="topBar maxWidth">
+          <!-- For icons and stuff, only show on screensize 500px and more-->
+          <div class="leftHolderTopBar"></div>
+          <div class="rightHolderTopBar">
+            <button class="logOutBtn">
+              <img
+                src="images/Profile.svg"
+                alt="Figur föreställande en gubbe"
+              />
+              <span class="spanInfoBtnText">Logga ut!</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="extraInfoContainer maxWidth">
+        <div class="extraInfoWrapper">
+          <div class="warningIconWrapper">
+            <img src="images/varning.svg" alt="Varningsskylt" />
+          </div>
+          <div class="infoTextWrapper">
+            <h2>Corona info -</h2>
+            <p>
+              Vi kör endast en resenär åt gången med undantag för de som bor i
+              samma hushåll.
+            </p>
+          </div>
         </div>
       </div>
     </header>
