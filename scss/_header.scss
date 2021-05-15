@@ -51,6 +51,10 @@ nav {
     position: relative;
     height: 1.7em;
     display: none;
+    @include padda {
+        display: flex;
+    }
+
   }
   
   
@@ -115,7 +119,7 @@ nav {
 
 .warningIconWrapper {
     img {
-        min-width: 3em;
+        min-width: 6em;
         height: 100%;
     }
 }

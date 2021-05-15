@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="navHolder">
-          <nav>
+          <nav role="navigation" aria-label="Primary menu">
             <ul>
               <li>
                 <a class="menuText" href="#start">Boka resa</a>
@@ -100,7 +100,7 @@
           <div class="warningIconWrapper">
             <img src="images/varning.svg" alt="Varningsskylt" />
           </div>
-          <div class="infoTextWrapper">
+          <div tabindex="0" class="infoTextWrapper">
             <h2>Corona info -</h2>
             <p>
               Vi kör endast en resenär åt gången med undantag för de som bor i
@@ -110,5 +110,78 @@
         </div>
       </div>
     </header>
+    <main class="maxWidth">
+      <div class="mainWrapper">
+        <section class="mainHeader">
+          <h1 tabindex="0">Boka resa</h1>
+          <p tabindex="0">
+            Är det en enskild eller en återkommande resa du vill boka?
+          </p>
+          <nav id="typeOfTrip" role="navigation" aria-label="Secondary menu">
+            <ul
+              class="ulTypeOfTrip"
+              aria-label="Välj om det är en enskild resa eller återkommande du vill boka"
+            >
+              <li>
+                <button class="bookBtn bookBtnActive">Enskild resa</button>
+              </li>
+              <li>
+                <button class="bookBtn bookBtnNonActive">
+                  Återkommande resa
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <form class="mainForms">
+          <fieldset class="fieldAddress">
+            <legend>Välj adress att åka till och från</legend>
+            <div class="addressContainer">
+              <div class="addressWrapper">
+                <label class="h2Label" for="addressTo">
+                  Vart vill du åka?
+                </label>
+                <br />
+                <div class="inputFieldsIconWrapper">
+                  <input
+                    type="text"
+                    id="addressTo"
+                    placeholder="Till adress..."
+                  />
+                  <div class="inputIconWrapper">
+                    <img
+                      src="images/Places.svg"
+                      alt="Ikon som illustrerar plats"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="addressWrapper">
+                <label class="h2Label" for="addressPickupinput">
+                  Vart vill du resa från?
+                </label>
+                <br />
+                <div class="inputFieldsIconWrapper">
+                  <input
+                    type="text"
+                    id="addressTo"
+                    placeholder="Från adress..."
+                  />
+                  <div class="inputIconWrapper">
+                    <img
+                      src="images/Places.svg"
+                      alt="Ikon som illustrerar plats"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="mapImgWrapper">
+            <img src="images/" alt="" />
+          </div>
+        </form>
+      </div>
+    </main>
   </body>
 </html>

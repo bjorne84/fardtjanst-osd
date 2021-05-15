@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+@use '_colors.scss' as *;
+@use '_mixins.scss' as *;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 
 $headingsOne: 'Roboto', sans-serif;
 $headingsTwo: Arial, Helvetica, sans-serif;
@@ -11,3 +13,28 @@ $longPtext: Verdana, Geneva, Tahoma, sans-serif;
 $fontSizeP: 1.4rem;
 $btnFontSizeMobile: 1.4rem;
 
+h1 {
+    font-family: $headingsOne;
+    color: $headerGrey1;
+    font-weight: 600;
+    font-size: 4rem;
+    @include padda {
+        font-size: 6rem;
+    }
+    @include desktop {
+        font-size: 8rem;
+    }
+}
+
+p {
+    font-family: $infoText;
+    color: $pGrey;
+    font-weight: normal;
+    font-size: 1.4rem;
+    @include padda {
+        font-size: 1.6rem;
+    }
+    @include desktop {
+        font-size: 1.7rem;
+    }
+}

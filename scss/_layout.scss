@@ -2,6 +2,7 @@
 @use '_colors.scss' as *;
 .maxWidth {
     max-width: 1220px;
+    margin: 0 auto;
 }
 .body {
     background-color: $bodyColor;

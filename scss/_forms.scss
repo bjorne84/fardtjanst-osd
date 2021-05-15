@@ -1,0 +1,58 @@
+@use '_fonts.scss' as *;
+@use '_colors.scss' as *;
+@use '_mixins.scss' as *;
+// Address
+
+input::placeholder {
+    font-family: $infoText;
+}
+input {
+    font-family: $infoText;
+    font-size: 1.4rem;
+}
+.fieldAddress {
+    border: none;
+    legend {
+     display: none;
+    }
+}
+
+.addressContainer{
+    //position: relative;
+    @include padda {
+        display: flex;
+    }
+    
+}
+.addressWrapper {
+    input {
+        width: 100%;
+        min-height: 30px;
+        border: none;
+        background-color: inherit;
+       // margin-bottom: 1em;
+    }
+}
+
+.h2Label {
+    color: $headerGrey3;
+    font-family: $headingsTwo;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+// form components
+.inputFieldsIconWrapper {
+    display: flex;
+    border: solid 1px $formBorder;
+    background-color: $formBackground;
+    padding: 4px;
+    width: 85%;
+    margin-bottom: 3em;
+}
+
+.inputIconWrapper {
+    padding-right: 0.5em;
+    img {
+        height: 100%;
+    }
+}

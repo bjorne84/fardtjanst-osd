@@ -48,3 +48,39 @@
         max-height: 20px;
     }
 }
+
+// Blue buttons for choose of travel
+.bookBtn {
+    border: solid 3px $blueLinkText;
+    background-color: $bodyColor;
+    border-radius: 0.2em;
+    font-family: $menuTextStyle;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $blueLinkText;
+    cursor: pointer;
+    :hover {
+        background-color: $themeLightBlue;
+    }
+}
+.bookBtnNonActive:hover {
+    background-color: rgb(224, 242, 250);
+}
+.bookBtnActive {
+    background-color: $blueLinkText;
+    color: $white;
+
+}
+
+
+// form components
+.inputFieldsIconWrapper {
+    display: flex;
+    border: solid 1px $formBorder;
+    background-color: $formBackground;
+    padding: 4px;
+}
+
+.inputIconWrapper {
+    padding-right: 0.5em;
+}

@@ -4,6 +4,40 @@
 /* Also used in toparea of header*/
 /* Font colors*/
 /* for responsive*/
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: #4B4B4B;
+  font-weight: 600;
+  font-size: 4rem;
+}
+@media (min-width: 500px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 960px) {
+  h1 {
+    font-size: 8rem;
+  }
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1D1F21;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+@media (min-width: 500px) {
+  p {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 960px) {
+  p {
+    font-size: 1.7rem;
+  }
+}
+
 /* CSS Document */
 /* Box sizing rules */
 *, *::before, *::after {
@@ -67,6 +101,7 @@ ul {
 /* ------------------END CLEARING OF SETTINGS ---------------------------------------*/
 .maxWidth {
   max-width: 1220px;
+  margin: 0 auto;
 }
 
 .body {
@@ -118,6 +153,121 @@ ul {
   max-height: 20px;
 }
 
+.bookBtn {
+  border: solid 3px #0859A1;
+  background-color: #ffffff;
+  border-radius: 0.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0859A1;
+  cursor: pointer;
+}
+.bookBtn :hover {
+  background-color: #C4DCEE;
+}
+
+.bookBtnNonActive:hover {
+  background-color: #e0f2fa;
+}
+
+.bookBtnActive {
+  background-color: #0859A1;
+  color: #ffffff;
+}
+
+.inputFieldsIconWrapper {
+  display: flex;
+  border: solid 1px #78838D;
+  background-color: #F6F6F6;
+  padding: 4px;
+}
+
+.inputIconWrapper {
+  padding-right: 0.5em;
+}
+
+main {
+  margin: 0 auto;
+}
+main h1 {
+  margin-bottom: 0.3em;
+  line-height: 1;
+  border-bottom: solid 4px #4B4B4B;
+}
+
+.mainHeader {
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-top: 1.8em;
+  margin-bottom: 3em;
+  padding-bottom: 1em;
+  padding-top: 1.4em;
+  border-bottom: solid 1px #F3F3F3;
+}
+
+.ulTypeOfTrip {
+  display: flex;
+  justify-content: space-between;
+}
+
+#typeOfTrip {
+  margin-top: 0.5em;
+  max-width: 400px;
+}
+
+input::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+}
+
+.fieldAddress {
+  border: none;
+}
+.fieldAddress legend {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .addressContainer {
+    display: flex;
+  }
+}
+
+.addressWrapper input {
+  width: 100%;
+  min-height: 30px;
+  border: none;
+  background-color: inherit;
+}
+
+.h2Label {
+  color: #6D6D6D;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.inputFieldsIconWrapper {
+  display: flex;
+  border: solid 1px #78838D;
+  background-color: #F6F6F6;
+  padding: 4px;
+  width: 85%;
+  margin-bottom: 3em;
+}
+
+.inputIconWrapper {
+  padding-right: 0.5em;
+}
+.inputIconWrapper img {
+  height: 100%;
+}
+
 nav ul {
   list-style: none;
 }
@@ -161,6 +311,11 @@ nav ul {
   position: relative;
   height: 1.7em;
   display: none;
+}
+@media (min-width: 500px) {
+  .inputWrapper {
+    display: flex;
+  }
 }
 
 .inputLabel {
@@ -218,7 +373,7 @@ nav ul {
 }
 
 .warningIconWrapper img {
-  min-width: 3em;
+  min-width: 6em;
   height: 100%;
 }
 
