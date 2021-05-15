@@ -13,7 +13,7 @@ input {
 .fieldAddress {
     border: none;
     legend {
-     display: none;
+        display: none;
     }
 }
 
@@ -40,6 +40,9 @@ input {
     font-size: 1.8rem;
     font-weight: 700;
 }
+.h3Label {
+    font-size: 1.4rem;
+}
 // form components
 .inputFieldsIconWrapper {
     display: flex;
@@ -55,4 +58,17 @@ input {
     img {
         height: 100%;
     }
+}
+
+// map images
+.mapImgWrapper {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+// checkboxes
+.flexCheckBoxesWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
