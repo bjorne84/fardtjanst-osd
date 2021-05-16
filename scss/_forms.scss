@@ -10,7 +10,7 @@ input {
     font-family: $infoText;
     font-size: 1.4rem;
 }
-.fieldAddress {
+.fieldSetting {
     border: none;
     legend {
         display: none;
@@ -41,7 +41,7 @@ input {
     font-weight: 700;
 }
 .h3Label {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 // form components
 .inputFieldsIconWrapper {
@@ -66,9 +66,18 @@ input {
     padding-right: 0.5em;
 }
 
+// checkbox/radio
+
+
 // checkboxes
-.flexCheckBoxesWrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.checkBoxWrapper {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    @include flexWrapp;
+    justify-content: space-between;
+}
+
+// div för dotted lined
+.lineDiv {
+    @include line;
 }

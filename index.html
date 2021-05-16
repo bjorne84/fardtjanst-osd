@@ -134,7 +134,7 @@
           </nav>
         </section>
         <form class="mainForms">
-          <fieldset class="fieldAddress">
+          <fieldset class="fieldAddress fieldSetting">
             <legend>Välj adress att åka till och från</legend>
             <div class="addressContainer">
               <div class="addressWrapper">
@@ -183,72 +183,26 @@
               alt="Bild på karta att välja vart du vill resa till och från"
             />
           </div>
-          <fieldset class="fieldReturn">
+          <fieldset class="fieldSetting">
             <legend>Enkel eller tur-och-retur resa?</legend>
-            <div class="flexCheckBoxesWrapper">
-              <div class="checkBoxWrapper">
-                <input
-                  type="checkbox"
-                  class="checkBox checkedBox"
-                  id="singelTrip"
-                  name="singelTrip"
-                  checked="true"
-                />
-                <label class="h2Label h3Label" for="singelTrip"
-                  >Enkelresa (30 kr)</label
-                >
-              </div>
-              <div class="checkBoxWrapper">
-                <input type="checkbox" class="checkBox checkedBox"
-                id="singelTrip" name="singelTrip" value="singelTrip" checked:
-                checked; />
-                <label class="h2Label h3Label" for="singelTrip"
-                  >Enkelresa (30 kr)</label
-                >
-              </div>
-            </div>
 
-            <p>test</p>
-
-            <div class="c-checkbox c-checkbox--svg">
-              <input class="sr-only" id="cs1" type="checkbox" />
-              <label for="cs1" class="h2Label h3Label c-checkbox__label c-checkbox__label--svg" for="cs">
-                <svg viewBox="0 0 100 100">
-                  <path
-                    class="path"
-                    fill="none"
-                    stroke="#000"
-                    stroke-width="13"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
-                    d="M12.1 52.1l24.4 24.4 53-53"
-                  />
-                </svg>
-                Enkelresa (30 kr)
+            <div class="checkBoxWrapper">
+              <label class="labelContainer h2Label h3Label"
+                >Enkel resa (30 kr)
+                <input type="radio" checked="checked" name="radio" />
+                <span class="checkmark"></span>
               </label>
-              <div class="c-checkbox c-checkbox--svg">
-                <input class="sr-only" id="cs2" type="checkbox" />
-                <label for="cs2" class=" h2Label h3Label c-checkbox__label c-checkbox__label--svg" for="cs">
-                  <svg viewBox="0 0 100 100">
-                    <path
-                      class="path"
-                      fill="none"
-                      stroke="#000"
-                      stroke-width="13"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-miterlimit="10"
-                      d="M12.1 52.1l24.4 24.4 53-53"
-                    />
-                  </svg>
-                  Tur-och-retur (60 kr)
-                </label>
+              <label class="labelContainer h2Label h3Label"
+                >Tur-och-retur (60 kr)
+                <input type="radio" name="radio" />
+                <span class="checkmark"></span>
+              </label>
             </div>
-            <br />
           </fieldset>
+          <div class="lineDiv"></div>
         </form>
       </div>
+      <h2><a href="formtest.html">fromtest</a></h2>
     </main>
   </body>
 </html>

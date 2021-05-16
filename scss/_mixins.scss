@@ -1,3 +1,4 @@
+@use '_colors.scss' as *;
 /* for responsive*/
 $padda: 500px;
 $desktop: 960px;
@@ -13,3 +14,14 @@ $desktop: 960px;
     }
 }
 
+@mixin flexWrapp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@mixin line {
+    border: solid 1px $linecolor;
+    margin: 4px;
+    
+}
