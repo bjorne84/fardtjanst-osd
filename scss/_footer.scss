@@ -1,0 +1,132 @@
+@use '_fonts.scss' as *;
+@use '_colors.scss' as *;
+@use '_mixins.scss' as *;
+.lightBlueFooter {
+    width: 100%;
+    background-color: $themeLightBlue;
+    padding: 4em 0em 3em 0em;
+}
+.lightBlueFooterWrapper {
+  max-width: 1140px;
+    @include flexWrapp;
+    justify-content: space-evenly;
+    p {
+      max-width: 30em;
+    }
+  }
+.blueFooter {
+  background-color: $themeBlue;
+
+}
+
+.blueFooterWrapper {
+  padding: 1em 3em;
+}
+
+.imgLightBlue {
+  display: none;
+  @include padda {
+    max-width: 30em;
+  }
+ 
+}
+
+
+.taxiInfo {
+  width: 100%;
+  position: relative;
+}
+.positionTaxi {
+  @include flexWrapp;
+  justify-content: space-evenly;
+}
+
+.taxiLogosWrapper {
+  @include padda {
+    position: absolute;
+    bottom: 0;
+  }
+  
+}
+
+.imgToBottom {
+  margin-top: 2em;
+}
+
+.taxiP {
+  display: none;
+}
+
+
+
+.bottomImg {
+  position: relative;
+ 
+}
+
+.ostersund-img {
+  max-height: 10em;
+}
+
+
+// main footer
+
+.teleWrapper {
+padding-bottom: 2em;
+padding-top: 4em;
+border-bottom: dotted 3px $white;
+ h3 {
+   margin-top: 1.6em;
+   color: $white;
+ }
+}
+.teleHeaderIcon {
+  @include flexWrapp;
+  padding: 1em 0em 0.8em 0em;
+  
+  img {
+    max-width: 3.4em;
+  }
+  justify-content: space-between;
+  h2 {
+    color: $white;
+    font-size: 2.7rem;
+  }
+
+
+}
+
+.li-p-wrapper {
+  li {
+    @include flexWrapp;
+    justify-content: space-between;
+    line-height: 2rem;
+    padding-top: 1em;
+    p {
+      color: $white;
+      font-size: 1.8rem;
+    }
+    a {
+
+    }
+  }
+}
+
+.li-extra-padding {
+  margin-top: 1.4em;
+}
+
+.textCopy {
+  padding: 2em 0em 1em 0em;
+  margin: 0 auto;
+  text-align: center;
+  @include flexWrapp;
+  color: $white;
+  font-size: 1.6rem;
+
+  p {
+    color: $white;
+    font-size: 1.8rem;
+    margin-left: 1em;
+  }
+}

@@ -25,7 +25,15 @@ h1 {
         font-size: 8rem;
     }
 }
+h2 {
+    font-family: $headingsTwo;
+    font-size: 2.2rem;
+}
 
+h3 {
+    font-family: $headingsTwo;
+    font-size: 2rem;
+}
 p {
     font-family: $infoText;
     color: $pGrey;
@@ -37,4 +45,30 @@ p {
     @include desktop {
         font-size: 1.7rem;
     }
+}
+
+// real links
+.underLineLink {
+    font-family: $infoText;
+    color: $blueLinkText;
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 1.4rem;
+    :hover {
+        font-weight: bold;
+    }
+}
+
+.underLineLink:hover {
+    font-weight: bold;
+}
+
+.whiteLink {
+    font-family: $infoText;
+    font-size: 1.8rem;
+    color: $white;
+}
+.whiteLink:hover {
+    font-weight: bold;
+    transition: 0.3s;
 }

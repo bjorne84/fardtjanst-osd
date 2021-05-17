@@ -1,4 +1,5 @@
 @use '_fonts.scss' as *;
+
 @use '_colors.scss' as *;
 @use '_mixins.scss' as *;
 // Address
@@ -8,13 +9,32 @@ input::placeholder {
 }
 input {
     font-family: $infoText;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 .fieldSetting {
+    margin-top: 4em;
+    margin-bottom: 0em;
     border: none;
     legend {
         display: none;
     }
+}
+
+.fieldSetting2 {
+    margin-top: 1em;
+
+}
+
+legend {
+    font-family: $infoText;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: $headerGrey2;
+}
+.showLegend {
+    display: block !important;
+  
+    
 }
 
 .addressContainer{
@@ -35,13 +55,13 @@ input {
 }
 
 .h2Label {
-    color: $headerGrey3;
+    color: $headerGrey2;
     font-family: $headingsTwo;
     font-size: 1.8rem;
     font-weight: 700;
 }
 .h3Label {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 // form components
 .inputFieldsIconWrapper {
@@ -49,7 +69,7 @@ input {
     border: solid 1px $formBorder;
     background-color: $formBackground;
     padding: 4px;
-    width: 85%;
+    width: 95%;
     margin-bottom: 3em;
 }
 
@@ -71,13 +91,212 @@ input {
 
 // checkboxes
 .checkBoxWrapper {
-    margin-top: 3em;
-    margin-bottom: 2em;
+    max-width: 35em;
     @include flexWrapp;
-    justify-content: space-between;
+    //justify-content: space-between;
 }
 
 // div för dotted lined
 .lineDiv {
     @include line;
+    margin-top: 1em;
+}
+
+
+// date
+
+.dateWrapper {
+    padding-top: 1em;
+ 
+}
+
+.dateInWrapper {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.dateBoxWrapper {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-bottom: 1.5em;
+}
+
+.dateLabel {
+    margin-right: 0.8em;
+}
+label {
+    font-family: $infoText;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: $headerGrey2;
+}
+
+.inputSettings {
+width: 100%;
+min-height: 30px;
+border: none;
+background-color: inherit;
+}
+
+// date input
+
+// time it takes
+.takeTimeWrapper {
+    margin-top: 5em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    text-align: center;
+    background-color: $backgroundGrey;
+    p {
+        font-size: 1.8rem;
+    }
+}
+
+.klockanWrapp {
+    margin-top: 1em;
+    @include flexWrapp;
+    text-align: center;
+    span {
+
+        width: 20%;
+        font-family: $infoText;
+        font-weight: 700;
+        font-size: 2rem;
+        color: $pGrey;
+    }
+}
+
+#klockanText {
+    padding-top: 0.4em;
+}
+.klBackground {
+   border: solid 1px $sandBorder;
+   border-radius: 0.4em;
+   background-color: $sandColor;
+   padding: 0.4em 1.8em;
+}
+
+.taxainfo {
+    margin-top: 6em;
+    margin: 4em 1em;
+    border: solid 1px $sandBorder;
+    border-radius: 0.4em;
+    background-color: $sandColor;
+    padding: 0.4em 1.8em 1em 1.8em;
+    p {
+        font-size: 1.6rem;
+        color: $blackSandText;
+        margin-bottom: 0.8em;
+        margin-top: 1.4em;
+    }
+
+    a {
+       
+        font-size: 1.8rem;
+    }
+}
+
+
+// time 
+.inputTime {
+border: solid 3px $accent;
+border-radius: 0.2em;
+font-size: 2.2em;
+}
+
+.padding-top {
+    padding-top: 2em;
+}
+
+.checkBoxWrapper {
+    max-width: 45em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    label:first-of-type {
+        //margin-right: 0.4em;
+        margin-right: clamp(0.4em, 1.5em, 2em);
+    }
+}
+
+.labelProcent {
+    width: 45%;
+}
+
+
+// price and travels left at färdtjänst-price
+.checkOutWrapper {
+    background-color: $sandColor;
+    border: solid 1px $sandBorder;
+    margin: 6em 1em 3em 1em;
+    padding: 1em;
+}
+
+.checkOutFlex  {
+   
+    @include flexWrapp;
+    span{
+        font-family: $infoText;
+        color: $blackSandText;
+    }
+    span:nth-child(1) {
+        width: 80%;
+    }
+    span:nth-child(2) {
+        width: 20%;
+    }
+}
+
+.priceWrapper {
+    border-bottom: solid 1px $sandBorder;
+    span {
+        font-size: 1.6rem;
+    }
+    span:nth-child(2) {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+}
+
+.travelsLeftWrapper {
+    padding-top: 1em;
+    span:nth-child(1) {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    span:nth-child(2) {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+}
+
+
+// travel to work or not
+.workTravelField {
+    margin-top: 2em;
+    @include flexWrapp;
+    legend {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $blackSandText;
+    }
+}
+
+
+.bookWrapper {
+    @include flexWrapp;
+    justify-content: end;
+    margin: 4em 1.5em 4em 1.5em;
+     a {
+         display: none;
+     }
+     button {
+        padding: 0 1.3em;
+     }
 }

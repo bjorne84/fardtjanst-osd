@@ -2,6 +2,10 @@
 @use '_colors.scss' as *;
 
 // Buttons
+
+button {
+  transition: 0.3s;
+}
 .btnText {
     font-family: $infoText;
     font-size: $btnFontSizeMobile; 
@@ -59,9 +63,11 @@
     font-weight: 600;
     color: $blueLinkText;
     cursor: pointer;
-    :hover {
-        background-color: $themeLightBlue;
-    }
+
+}
+.bookBtn:hover {
+  background-color: $themeLightBlue;
+  color: $blueLinkText;
 }
 .bookBtnNonActive:hover {
     background-color: rgb(224, 242, 250);
@@ -215,6 +221,7 @@ as checkmarks and normal checkmarks.
     position: absolute;
     opacity: 0;
     cursor: pointer;
+    right: 0;
     
   }
   
@@ -260,6 +267,7 @@ as checkmarks and normal checkmarks.
   // change textcolor on hover
   .labelContainer:hover {
       color: $blueLinkText;
+  
   }
   /* Style the indicator (dot/circle) */
   .labelContainer .checkmark:after {
@@ -279,10 +287,10 @@ as checkmarks and normal checkmarks.
       border-radius: 50%;
   }
   .labelContainer .radioStyle:after {
-    top: 7px;
-	left: 7px;
-	width: 8px;
-	height: 8px;
+    top: 6px;
+    left: 6px;
+    width: 9px;
+    height: 9px;
 	border-radius: 50%;
 	background: white;
     
@@ -291,3 +299,39 @@ as checkmarks and normal checkmarks.
 // *************************************
 // **** END CHECKBOX FROM w3schools ****
 // *************************************
+
+
+
+// Standard, normalbutton, used for for pick date etc
+
+.standardBtn {
+  border: solid 3px $accent;
+  background-color: $bodyColor;
+  border-radius: 0.2em;
+  font-family: $menuTextStyle;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $accent;
+  cursor: pointer;
+}
+
+.standardBtn:hover {
+  background-color: $themeLightBlue;
+} 
+
+.accentBtn {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $bodyColor;
+  background-color: $accent;
+  padding: 0 1em;
+  transition: 0.3s;
+
+}
+
+.accentBtn:hover {
+  background-color: $bodyColor;
+  color: $accent;
+}
+
+

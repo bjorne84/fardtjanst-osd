@@ -21,6 +21,16 @@ h1 {
   }
 }
 
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
 p {
   font-family: Arial, Helvetica, sans-serif;
   color: #1D1F21;
@@ -36,6 +46,32 @@ p {
   p {
     font-size: 1.7rem;
   }
+}
+
+.underLineLink {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0859A1;
+  font-weight: normal;
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+.underLineLink :hover {
+  font-weight: bold;
+}
+
+.underLineLink:hover {
+  font-weight: bold;
+}
+
+.whiteLink {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.whiteLink:hover {
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 /* CSS Document */
@@ -108,6 +144,14 @@ ul {
   background-color: #ffffff;
 }
 
+ul {
+  list-style-type: none;
+}
+
+button {
+  transition: 0.3s;
+}
+
 .btnText {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
@@ -163,8 +207,10 @@ ul {
   color: #0859A1;
   cursor: pointer;
 }
-.bookBtn :hover {
+
+.bookBtn:hover {
   background-color: #C4DCEE;
+  color: #0859A1;
 }
 
 .bookBtnNonActive:hover {
@@ -290,6 +336,7 @@ as checkmarks and normal checkmarks.
   position: absolute;
   opacity: 0;
   cursor: pointer;
+  right: 0;
 }
 
 /* Create a custom radio button */
@@ -351,12 +398,41 @@ as checkmarks and normal checkmarks.
 }
 
 .labelContainer .radioStyle:after {
-  top: 7px;
-  left: 7px;
-  width: 8px;
-  height: 8px;
+  top: 6px;
+  left: 6px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background: white;
+}
+
+.standardBtn {
+  border: solid 3px #E54D0E;
+  background-color: #ffffff;
+  border-radius: 0.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #E54D0E;
+  cursor: pointer;
+}
+
+.standardBtn:hover {
+  background-color: #C4DCEE;
+}
+
+.accentBtn {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #E54D0E;
+  padding: 0 1em;
+  transition: 0.3s;
+}
+
+.accentBtn:hover {
+  background-color: #ffffff;
+  color: #E54D0E;
 }
 
 main {
@@ -371,7 +447,7 @@ main h1 {
 .mainHeader {
   margin-right: 1em;
   margin-left: 1em;
-  margin-top: 1.8em;
+  margin-top: 3em;
   margin-bottom: 3em;
   padding-bottom: 1em;
   padding-top: 1.4em;
@@ -394,14 +470,31 @@ input::placeholder {
 
 input {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .fieldSetting {
+  margin-top: 4em;
+  margin-bottom: 0em;
   border: none;
 }
 .fieldSetting legend {
   display: none;
+}
+
+.fieldSetting2 {
+  margin-top: 1em;
+}
+
+legend {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #4F565B;
+}
+
+.showLegend {
+  display: block !important;
 }
 
 @media (min-width: 500px) {
@@ -418,14 +511,14 @@ input {
 }
 
 .h2Label {
-  color: #6D6D6D;
+  color: #4F565B;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
 }
 
 .h3Label {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .inputFieldsIconWrapper {
@@ -433,7 +526,7 @@ input {
   border: solid 1px #78838D;
   background-color: #F6F6F6;
   padding: 4px;
-  width: 85%;
+  width: 95%;
   margin-bottom: 3em;
 }
 
@@ -450,17 +543,331 @@ input {
 }
 
 .checkBoxWrapper {
-  margin-top: 3em;
-  margin-bottom: 2em;
+  max-width: 35em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .lineDiv {
   border: solid 1px #f0f0f0;
   margin: 4px;
+  margin-top: 1em;
+}
+
+.dateWrapper {
+  padding-top: 1em;
+}
+
+.dateInWrapper {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.dateBoxWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+.dateLabel {
+  margin-right: 0.8em;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #4F565B;
+}
+
+.inputSettings {
+  width: 100%;
+  min-height: 30px;
+  border: none;
+  background-color: inherit;
+}
+
+.takeTimeWrapper {
+  margin-top: 5em;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  text-align: center;
+  background-color: #F3F3F3;
+}
+.takeTimeWrapper p {
+  font-size: 1.8rem;
+}
+
+.klockanWrapp {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.klockanWrapp span {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #1D1F21;
+}
+
+#klockanText {
+  padding-top: 0.4em;
+}
+
+.klBackground {
+  border: solid 1px #707070;
+  border-radius: 0.4em;
+  background-color: #FBF2EA;
+  padding: 0.4em 1.8em;
+}
+
+.taxainfo {
+  margin-top: 6em;
+  margin: 4em 1em;
+  border: solid 1px #707070;
+  border-radius: 0.4em;
+  background-color: #FBF2EA;
+  padding: 0.4em 1.8em 1em 1.8em;
+}
+.taxainfo p {
+  font-size: 1.6rem;
+  color: #1E1E1E;
+  margin-bottom: 0.8em;
+  margin-top: 1.4em;
+}
+.taxainfo a {
+  font-size: 1.8rem;
+}
+
+.inputTime {
+  border: solid 3px #E54D0E;
+  border-radius: 0.2em;
+  font-size: 2.2em;
+}
+
+.padding-top {
+  padding-top: 2em;
+}
+
+.checkBoxWrapper {
+  max-width: 45em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.checkBoxWrapper label:first-of-type {
+  margin-right: clamp(0.4em, 1.5em, 2em);
+}
+
+.labelProcent {
+  width: 45%;
+}
+
+.checkOutWrapper {
+  background-color: #FBF2EA;
+  border: solid 1px #707070;
+  margin: 6em 1em 3em 1em;
+  padding: 1em;
+}
+
+.checkOutFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.checkOutFlex span {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1E1E1E;
+}
+.checkOutFlex span:nth-child(1) {
+  width: 80%;
+}
+.checkOutFlex span:nth-child(2) {
+  width: 20%;
+}
+
+.priceWrapper {
+  border-bottom: solid 1px #707070;
+}
+.priceWrapper span {
+  font-size: 1.6rem;
+}
+.priceWrapper span:nth-child(2) {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.travelsLeftWrapper {
+  padding-top: 1em;
+}
+.travelsLeftWrapper span:nth-child(1) {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.travelsLeftWrapper span:nth-child(2) {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.workTravelField {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.workTravelField legend {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #1E1E1E;
+}
+
+.bookWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin: 4em 1.5em 4em 1.5em;
+}
+.bookWrapper a {
+  display: none;
+}
+.bookWrapper button {
+  padding: 0 1.3em;
+}
+
+.lightBlueFooter {
+  width: 100%;
+  background-color: #C4DCEE;
+  padding: 4em 0em 3em 0em;
+}
+
+.lightBlueFooterWrapper {
+  max-width: 1140px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.lightBlueFooterWrapper p {
+  max-width: 30em;
+}
+
+.blueFooter {
+  background-color: #0859A1;
+}
+
+.blueFooterWrapper {
+  padding: 1em 3em;
+}
+
+.imgLightBlue {
+  display: none;
+}
+@media (min-width: 500px) {
+  .imgLightBlue {
+    max-width: 30em;
+  }
+}
+
+.taxiInfo {
+  width: 100%;
+  position: relative;
+}
+
+.positionTaxi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 500px) {
+  .taxiLogosWrapper {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.imgToBottom {
+  margin-top: 2em;
+}
+
+.taxiP {
+  display: none;
+}
+
+.bottomImg {
+  position: relative;
+}
+
+.ostersund-img {
+  max-height: 10em;
+}
+
+.teleWrapper {
+  padding-bottom: 2em;
+  padding-top: 4em;
+  border-bottom: dotted 3px #ffffff;
+}
+.teleWrapper h3 {
+  margin-top: 1.6em;
+  color: #ffffff;
+}
+
+.teleHeaderIcon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1em 0em 0.8em 0em;
+  justify-content: space-between;
+}
+.teleHeaderIcon img {
+  max-width: 3.4em;
+}
+.teleHeaderIcon h2 {
+  color: #ffffff;
+  font-size: 2.7rem;
+}
+
+.li-p-wrapper li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 2rem;
+  padding-top: 1em;
+}
+.li-p-wrapper li p {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+.li-extra-padding {
+  margin-top: 1.4em;
+}
+
+.textCopy {
+  padding: 2em 0em 1em 0em;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+.textCopy p {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-left: 1em;
 }
 
 nav ul {
