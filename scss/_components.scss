@@ -1,5 +1,6 @@
 @use '_fonts.scss' as *;
 @use '_colors.scss' as *;
+@use '_mixins.scss' as *;
 
 // Buttons
 
@@ -13,7 +14,29 @@ button {
     font-weight: 600;
 }
 
+// search btn i field
+.searchBtn {
+  border-right: solid 1px $formBorder;
+  border-top: solid 1px $formBorder;
+  border-bottom: solid 1px $formBorder;
+  border-left: solid 1px $formBorder;
+  border-radius: 0em 0.40em 0.4em 0em;
+  padding: 0.7em 0.5em;
+  background-color: $btnBackgroundGrey;
+}
+.searchBtn:hover {
+  background-color: $backgroundGrey;
+}
 
+.flexSpan {
+  display:flex;
+  span{
+    margin-right: 18px;
+    color: $pGrey;
+    padding: 0.5em;
+    font-size: 1.6rem;
+  }
+}
 .expandSearchBtn {
     background-color: $btnBackgroundGrey;
     border: none;
@@ -25,6 +48,9 @@ button {
     cursor: pointer;
     margin-right: 0.6em;
     transition: all .5s ease-in-out;
+    @include padda {
+      display: none;
+    }
 }
 
 
@@ -34,7 +60,16 @@ button {
     border: none;
     cursor: pointer;
 }
-
+.closeBtn {
+  background-color: $themeBlue;
+  padding: 1em;     
+   border: none;
+   cursor: pointer;
+  float: right;
+  @include padda {
+    display: none;
+}
+}
 // topbar
 .spanInfoBtnText {
     font-family: $infoText;
@@ -50,7 +85,11 @@ button {
     cursor: pointer;
     width: 100%;
     img {
+        padding-left: 1em;
         max-height: 20px;
+    }
+    span {
+      padding-left: 0.6em;
     }
 }
 

@@ -5,15 +5,23 @@
     width: 100%;
     background-color: $themeLightBlue;
     padding: 4em 0em 3em 0em;
+    @include padda {
+      padding: 7em 0em 9em 0em;
+    }
 }
 .lightBlueFooterWrapper {
   max-width: 1140px;
-    @include flexWrapp;
+    display: flex;
     justify-content: space-evenly;
     p {
       max-width: 30em;
     }
+    @include padda {
+      justify-content: end;
+      padding: 0em 3em;
+    }
   }
+
 .blueFooter {
   background-color: $themeBlue;
 
@@ -27,14 +35,21 @@
   display: none;
   @include padda {
     max-width: 30em;
+    display: block;
   }
- 
+  img {
+    border: solid 2px $white;
+    border-radius: 0.4em;
+  }
 }
 
 
 .taxiInfo {
   width: 100%;
   position: relative;
+  @include padda {
+    margin-left: 5em;
+  }
 }
 .positionTaxi {
   @include flexWrapp;
@@ -55,6 +70,9 @@
 
 .taxiP {
   display: none;
+  @include padda {
+    display: block;
+  }
 }
 
 
@@ -128,5 +146,6 @@ border-bottom: dotted 3px $white;
     color: $white;
     font-size: 1.8rem;
     margin-left: 1em;
+    width: 100%;
   }
 }

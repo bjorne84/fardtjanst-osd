@@ -1,5 +1,13 @@
 @use '_index.scss' as *;
 
+
+header {
+    @include padda {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 nav {
     ul {
         list-style: none;
@@ -16,6 +24,15 @@ nav {
     height: 7px;
     background-color: $themeBlue;
     width: 100%;
+    @include padda {
+        display: none;
+    }
+}
+
+.mainHeaderWrapper {
+    @include padda {
+        order: 2;
+    }
 }
 
 /* Wrapps logo, search, and hamburger icon*/
@@ -25,6 +42,13 @@ nav {
     margin: 0 auto;
     justify-content: space-between;
     background-color: $backgroundGrey;
+    @include padda {
+        background-color: $bodyColor;
+        margin-top: 2em;
+    }
+    @include desktop {
+        padding: 0em 1em;
+    }
 }
 
 .searchAndMenuWrapper {
@@ -32,6 +56,9 @@ nav {
     max-width: 15em;
     justify-content: space-between;
     min-width: 8em;
+    @include padda {
+        display: none;
+    }
 }
 
 .logoWrapper {
@@ -41,18 +68,59 @@ nav {
             padding-bottom: 8px;
             margin-left: 3px;
             max-height: 60px;
+            @include padda {
+                margin-left: 1em;
+                max-height: 10em;
+            }
         }
     }
 }
 
 /* searchbox*/
 /* Div that wraps the input fields*/
+.searchFieldWrapper {
+ display: none;
+ @include padda {
+    display: flex;
+    flex-wrap: wrap;
+    width: clamp(20em, 34em, 45em)
+}
+
+.searchForm {
+    width: clamp(20em, 34em, 45em);
+    height: 100%;
+    position: relative;
+}
+.fieldWrapper {
+    display: flex;
+background-color: $formBackground;
+} 
+
+.fieldWrapper {
+    width: clamp(20em, 34em, 45em);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 1em;
+}
+}
 .inputWrapper {
     position: relative;
-    height: 1.7em;
+    background-color: $formBackground;
+    border: none;
     display: none;
     @include padda {
         display: flex;
+        color: $pGrey!important;
+        width: 100%;
+        border-left: solid 1px $formBorder;
+        border-top: solid 1px $formBorder;
+        border-bottom: solid 1px $formBorder;
+        border-radius: 0.4em 0em 0em 0.4em;
+        padding: 0.7em 0.5em;
+        label {
+            font-weight: 500;
+        }
     }
 
   }
@@ -68,6 +136,10 @@ nav {
   .inputField {
     height: 100%;
     padding: 0 .2em;
+    border: none;
+background-color: inherit;
+width: 100%;
+
   }
   
   /* NEW CODE */
@@ -80,12 +152,24 @@ nav {
   // nav
   .navHolder {
       display: none;
+
   }
   .verticalDiv {
-    vertical-align: middle
+    vertical-align: middle;
+    @include padda {
+        margin: 0 auto;
+        max-width: 960px;
+        ul {
+        margin-bottom: 0;
+            li:last-child {
+                display: none;
+            }
+        }
+    }
   }
   // nav mobile
   .navHolder {
+      margin-top: 4em;
     background-color: $themeBlue;
     position: fixed;
     top: 0;
@@ -94,6 +178,11 @@ nav {
     height: 100%;
     max-height: 100vh;
     z-index: 5;
+    @include padda {
+        display: block;
+        position: static;
+        background-color: $bodyColor;
+    }
     
     ul {
         display: flex;
@@ -103,16 +192,55 @@ nav {
         width: 100%;
         top: 20vh;
         height: max-content;
+        @include padda {
+            position: static;
+            flex-direction: row;
+        }
         li {
             margin: 0 auto;
             padding: 1.2em 0em;
             border-bottom: solid 1px $btnBackgroundGrey;
+            @include padda {
+                border-bottom: none;
+                padding: 0.4em 1em;
+                border-top: solid 5px $themeBlue;
+                border-right: solid 5px $themeBlue;
+                border-left: solid 5px $themeBlue;
+                border-radius: 1em 1em 0em 0em;
+            }
         }
+   
         a {
             color: $white;
             font-size: 2rem;
+            @include padda {
+                color: $blueLinkText;
+            }
         }
     }
+  }
+  .navHolder {
+      li:hover {
+        
+            transition: 0.8s ease-in-out;
+            @include padda {
+                background-color: $themeBlue;
+                a {
+                  color: $white!important;
+                  border: $themeBlue;
+                }
+            }
+        
+      }
+  }
+  .activeLi {
+      @include padda {
+          background-color: $themeBlue;
+          a {
+            color: $white!important;
+            border: $themeBlue;
+          }
+      }
   }
 
   .menuText {
@@ -127,18 +255,111 @@ nav {
       width: 100%;
       height: 1em;
       background-color: $themeBlue;
+      @include padda {
+        height: 2em;
+    }
   }
 
 // topbar
+.topBarContainer {
+    @include padda {
+        order: 1;
+        background-color: $formBackground;
+        padding-top: 0.7em;
+        padding-bottom: 0.3em;
+        margin-bottom: 2em;
+    }
+    
+}
 .topBar {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
+    @include padda {
+        padding: 0em 1em;
+    }
 }
 .rightHolderTopBar {
     min-width: 11em;
+    @include padda {
+        width: 65%;
+    }
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    @include desktop {
+        width: 50%;
+    }
+}
+
+// språk
+.langDiv {
+    display: none;
+    @include padda {
+        display: flex;
+        flex-direction: row;
+        width: 6em;
+        justify-content: space-between;
+        img {
+           
+        }
+    }
+    font-family: $infoText;
+    font-size: 1.6rem;
+}
+.flagga {
+    width: 1em;
+    height: 24px;
+    width: 24px;
+}
+
+.phoneDiv {
+    display: none;
+    @include padda {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        span:first-of-type {
+            margin-right: 0.6em;
+        }
+        img {
+
+        }
+    }
+}
+
+.downArrow {
+    height: 18px;
+}
+
+.leftHolderTopBar {
+    display: none;
+    @include  padda {
+        display: flex;
+        max-height: 50px;
+
+    }
+}
+
+
+.topBarLogos {
+    img {
+        max-height: 35px;
+        margin-right: 1em;
+    }
+}
+.extraInfoContainer {
+    width: 100%;
+    max-width: 960px;
+    @include padda {
+        order: 3;
+        margin-top: 2em;
+    }
+ 
 }
 
 // Extra info about Coronavirus
@@ -147,7 +368,11 @@ nav {
     border: dotted $redWarning 3px;
     display: flex;
     padding: 0.3em;
- 
+    @include padda {
+        padding: 1em 2em;
+        margin-top: 2em;
+    }
+
 }
 
 .warningIconWrapper {
@@ -163,12 +388,18 @@ nav {
         font-family: $infoText;
         font-size: $fontSizeP;
         font-weight: bold;
-        float: left;
+        @include padda {
+            font-size: 2.5rem
+        }
+       
     }
     p {
         font-family: $infoText;
         font-size: $fontSizeP;
-        float: left;
+     
         padding-left: 0.5em;
+        @include padda {
+            font-size: $fontSizePforPadda;
+        }
     }
 }

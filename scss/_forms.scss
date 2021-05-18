@@ -1,5 +1,4 @@
 @use '_fonts.scss' as *;
-
 @use '_colors.scss' as *;
 @use '_mixins.scss' as *;
 // Address
@@ -17,6 +16,12 @@ input {
     border: none;
     legend {
         display: none;
+    }
+}
+
+.maxField {
+    @include padda {
+        max-width: 50em;
     }
 }
 
@@ -45,6 +50,10 @@ legend {
     
 }
 .addressWrapper {
+    @include padda {
+        width: 35em;
+        margin-right: 2em;
+    }
     input {
         width: 100%;
         min-height: 30px;
@@ -59,9 +68,15 @@ legend {
     font-family: $headingsTwo;
     font-size: 1.8rem;
     font-weight: 700;
+    @include padda {
+        font-size: 2.2rem;
+    }
 }
 .h3Label {
     font-size: 1.4rem;
+    @include padda {
+        font-size: 1.8rem;
+    }
 }
 // form components
 .inputFieldsIconWrapper {
@@ -154,6 +169,12 @@ background-color: inherit;
     p {
         font-size: 1.8rem;
     }
+    @include padda {
+        text-align: start;
+        p {
+            padding-left: 2em;
+        }
+    }
 }
 
 .klockanWrapp {
@@ -167,6 +188,9 @@ background-color: inherit;
         font-weight: 700;
         font-size: 2rem;
         color: $pGrey;
+        @include padda {
+            font-size: 2.6rem;
+        }
     }
 }
 
@@ -192,11 +216,18 @@ background-color: inherit;
         color: $blackSandText;
         margin-bottom: 0.8em;
         margin-top: 1.4em;
+        @include padda {
+            font-size: 1.8rem;
+        }
     }
 
     a {
        
         font-size: 1.8rem;
+    }
+
+    @include padda {
+        max-width: 40em;
     }
 }
 
@@ -229,6 +260,10 @@ font-size: 2.2em;
     width: 45%;
 }
 
+.flexWidht {
+display: flex;
+justify-content: end;
+}
 
 // price and travels left at färdtjänst-price
 .checkOutWrapper {
@@ -236,6 +271,7 @@ font-size: 2.2em;
     border: solid 1px $sandBorder;
     margin: 6em 1em 3em 1em;
     padding: 1em;
+    max-width: 40em
 }
 
 .checkOutFlex  {
@@ -285,6 +321,9 @@ font-size: 2.2em;
         font-size: 1.6rem;
         font-weight: 500;
         color: $blackSandText;
+        @include padda {
+            font-size: 1.8rem;
+        }
     }
 }
 

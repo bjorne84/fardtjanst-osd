@@ -39,7 +39,7 @@ p {
 }
 @media (min-width: 500px) {
   p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 960px) {
@@ -159,6 +159,30 @@ button {
   font-weight: 600;
 }
 
+.searchBtn {
+  border-right: solid 1px #78838D;
+  border-top: solid 1px #78838D;
+  border-bottom: solid 1px #78838D;
+  border-left: solid 1px #78838D;
+  border-radius: 0em 0.4em 0.4em 0em;
+  padding: 0.7em 0.5em;
+  background-color: #E5E5E5;
+}
+
+.searchBtn:hover {
+  background-color: #F3F3F3;
+}
+
+.flexSpan {
+  display: flex;
+}
+.flexSpan span {
+  margin-right: 18px;
+  color: #1D1F21;
+  padding: 0.5em;
+  font-size: 1.6rem;
+}
+
 .expandSearchBtn {
   background-color: #E5E5E5;
   border: none;
@@ -171,12 +195,30 @@ button {
   margin-right: 0.6em;
   transition: all 0.5s ease-in-out;
 }
+@media (min-width: 500px) {
+  .expandSearchBtn {
+    display: none;
+  }
+}
 
 .hamburgerBtn {
   background-color: #0859A1;
   padding: 1em;
   border: none;
   cursor: pointer;
+}
+
+.closeBtn {
+  background-color: #0859A1;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+@media (min-width: 500px) {
+  .closeBtn {
+    display: none;
+  }
 }
 
 .spanInfoBtnText {
@@ -195,7 +237,11 @@ button {
   width: 100%;
 }
 .logOutBtn img {
+  padding-left: 1em;
   max-height: 20px;
+}
+.logOutBtn span {
+  padding-left: 0.6em;
 }
 
 .bookBtn {
@@ -483,6 +529,12 @@ input {
   display: none;
 }
 
+@media (min-width: 500px) {
+  .maxField {
+    max-width: 50em;
+  }
+}
+
 .fieldSetting2 {
   margin-top: 1em;
 }
@@ -504,6 +556,12 @@ legend {
   }
 }
 
+@media (min-width: 500px) {
+  .addressWrapper {
+    width: 35em;
+    margin-right: 2em;
+  }
+}
 .addressWrapper input {
   width: 100%;
   min-height: 30px;
@@ -517,9 +575,19 @@ legend {
   font-size: 1.8rem;
   font-weight: 700;
 }
+@media (min-width: 500px) {
+  .h2Label {
+    font-size: 2.2rem;
+  }
+}
 
 .h3Label {
   font-size: 1.4rem;
+}
+@media (min-width: 500px) {
+  .h3Label {
+    font-size: 1.8rem;
+  }
 }
 
 .inputFieldsIconWrapper {
@@ -603,6 +671,14 @@ label {
 .takeTimeWrapper p {
   font-size: 1.8rem;
 }
+@media (min-width: 500px) {
+  .takeTimeWrapper {
+    text-align: start;
+  }
+  .takeTimeWrapper p {
+    padding-left: 2em;
+  }
+}
 
 .klockanWrapp {
   margin-top: 1em;
@@ -617,6 +693,11 @@ label {
   font-weight: 700;
   font-size: 2rem;
   color: #1D1F21;
+}
+@media (min-width: 500px) {
+  .klockanWrapp span {
+    font-size: 2.6rem;
+  }
 }
 
 #klockanText {
@@ -644,8 +725,18 @@ label {
   margin-bottom: 0.8em;
   margin-top: 1.4em;
 }
+@media (min-width: 500px) {
+  .taxainfo p {
+    font-size: 1.8rem;
+  }
+}
 .taxainfo a {
   font-size: 1.8rem;
+}
+@media (min-width: 500px) {
+  .taxainfo {
+    max-width: 40em;
+  }
 }
 
 .inputTime {
@@ -673,11 +764,17 @@ label {
   width: 45%;
 }
 
+.flexWidht {
+  display: flex;
+  justify-content: end;
+}
+
 .checkOutWrapper {
   background-color: #FBF2EA;
   border: solid 1px #707070;
   margin: 6em 1em 3em 1em;
   padding: 1em;
+  max-width: 40em;
 }
 
 .checkOutFlex {
@@ -730,6 +827,11 @@ label {
   font-weight: 500;
   color: #1E1E1E;
 }
+@media (min-width: 500px) {
+  .workTravelField legend {
+    font-size: 1.8rem;
+  }
+}
 
 .bookWrapper {
   display: flex;
@@ -750,16 +852,25 @@ label {
   background-color: #C4DCEE;
   padding: 4em 0em 3em 0em;
 }
+@media (min-width: 500px) {
+  .lightBlueFooter {
+    padding: 7em 0em 9em 0em;
+  }
+}
 
 .lightBlueFooterWrapper {
   max-width: 1140px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .lightBlueFooterWrapper p {
   max-width: 30em;
+}
+@media (min-width: 500px) {
+  .lightBlueFooterWrapper {
+    justify-content: end;
+    padding: 0em 3em;
+  }
 }
 
 .blueFooter {
@@ -776,12 +887,22 @@ label {
 @media (min-width: 500px) {
   .imgLightBlue {
     max-width: 30em;
+    display: block;
   }
+}
+.imgLightBlue img {
+  border: solid 2px #ffffff;
+  border-radius: 0.4em;
 }
 
 .taxiInfo {
   width: 100%;
   position: relative;
+}
+@media (min-width: 500px) {
+  .taxiInfo {
+    margin-left: 5em;
+  }
 }
 
 .positionTaxi {
@@ -804,6 +925,11 @@ label {
 
 .taxiP {
   display: none;
+}
+@media (min-width: 500px) {
+  .taxiP {
+    display: block;
+  }
 }
 
 .bottomImg {
@@ -869,6 +995,14 @@ label {
   color: #ffffff;
   font-size: 1.8rem;
   margin-left: 1em;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 nav ul {
@@ -884,6 +1018,17 @@ nav ul {
   background-color: #0859A1;
   width: 100%;
 }
+@media (min-width: 500px) {
+  .mobileTopLine {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .mainHeaderWrapper {
+    order: 2;
+  }
+}
 
 /* Wrapps logo, search, and hamburger icon*/
 .mainHeaderArea1 {
@@ -893,12 +1038,28 @@ nav ul {
   justify-content: space-between;
   background-color: #F3F3F3;
 }
+@media (min-width: 500px) {
+  .mainHeaderArea1 {
+    background-color: #ffffff;
+    margin-top: 2em;
+  }
+}
+@media (min-width: 960px) {
+  .mainHeaderArea1 {
+    padding: 0em 1em;
+  }
+}
 
 .searchAndMenuWrapper {
   display: flex;
   max-width: 15em;
   justify-content: space-between;
   min-width: 8em;
+}
+@media (min-width: 500px) {
+  .searchAndMenuWrapper {
+    display: none;
+  }
 }
 
 .logoWrapper a img {
@@ -907,17 +1068,61 @@ nav ul {
   margin-left: 3px;
   max-height: 60px;
 }
+@media (min-width: 500px) {
+  .logoWrapper a img {
+    margin-left: 1em;
+    max-height: 10em;
+  }
+}
 
 /* searchbox*/
 /* Div that wraps the input fields*/
+.searchFieldWrapper {
+  display: none;
+}
+@media (min-width: 500px) {
+  .searchFieldWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: clamp(20em, 34em, 45em);
+  }
+}
+.searchFieldWrapper .searchForm {
+  width: clamp(20em, 34em, 45em);
+  height: 100%;
+  position: relative;
+}
+.searchFieldWrapper .fieldWrapper {
+  display: flex;
+  background-color: #F6F6F6;
+}
+.searchFieldWrapper .fieldWrapper {
+  width: clamp(20em, 34em, 45em);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 1em;
+}
+
 .inputWrapper {
   position: relative;
-  height: 1.7em;
+  background-color: #F6F6F6;
+  border: none;
   display: none;
 }
 @media (min-width: 500px) {
   .inputWrapper {
     display: flex;
+    color: #1D1F21 !important;
+    width: 100%;
+    border-left: solid 1px #78838D;
+    border-top: solid 1px #78838D;
+    border-bottom: solid 1px #78838D;
+    border-radius: 0.4em 0em 0em 0.4em;
+    padding: 0.7em 0.5em;
+  }
+  .inputWrapper label {
+    font-weight: 500;
   }
 }
 
@@ -931,6 +1136,9 @@ nav ul {
 .inputField {
   height: 100%;
   padding: 0 0.2em;
+  border: none;
+  background-color: inherit;
+  width: 100%;
 }
 
 /* NEW CODE */
@@ -946,8 +1154,21 @@ nav ul {
 .verticalDiv {
   vertical-align: middle;
 }
+@media (min-width: 500px) {
+  .verticalDiv {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  .verticalDiv ul {
+    margin-bottom: 0;
+  }
+  .verticalDiv ul li:last-child {
+    display: none;
+  }
+}
 
 .navHolder {
+  margin-top: 4em;
   background-color: #0859A1;
   position: fixed;
   top: 0;
@@ -956,6 +1177,13 @@ nav ul {
   height: 100%;
   max-height: 100vh;
   z-index: 5;
+}
+@media (min-width: 500px) {
+  .navHolder {
+    display: block;
+    position: static;
+    background-color: #ffffff;
+  }
 }
 .navHolder ul {
   display: flex;
@@ -966,14 +1194,58 @@ nav ul {
   top: 20vh;
   height: max-content;
 }
+@media (min-width: 500px) {
+  .navHolder ul {
+    position: static;
+    flex-direction: row;
+  }
+}
 .navHolder ul li {
   margin: 0 auto;
   padding: 1.2em 0em;
   border-bottom: solid 1px #E5E5E5;
 }
+@media (min-width: 500px) {
+  .navHolder ul li {
+    border-bottom: none;
+    padding: 0.4em 1em;
+    border-top: solid 5px #0859A1;
+    border-right: solid 5px #0859A1;
+    border-left: solid 5px #0859A1;
+    border-radius: 1em 1em 0em 0em;
+  }
+}
 .navHolder ul a {
   color: #ffffff;
   font-size: 2rem;
+}
+@media (min-width: 500px) {
+  .navHolder ul a {
+    color: #0859A1;
+  }
+}
+
+.navHolder li:hover {
+  transition: 0.8s ease-in-out;
+}
+@media (min-width: 500px) {
+  .navHolder li:hover {
+    background-color: #0859A1;
+  }
+  .navHolder li:hover a {
+    color: #ffffff !important;
+    border: #0859A1;
+  }
+}
+
+@media (min-width: 500px) {
+  .activeLi {
+    background-color: #0859A1;
+  }
+  .activeLi a {
+    color: #ffffff !important;
+    border: #0859A1;
+  }
 }
 
 .menuText {
@@ -988,6 +1260,21 @@ nav ul {
   height: 1em;
   background-color: #0859A1;
 }
+@media (min-width: 500px) {
+  .blueLine {
+    height: 2em;
+  }
+}
+
+@media (min-width: 500px) {
+  .topBarContainer {
+    order: 1;
+    background-color: #F6F6F6;
+    padding-top: 0.7em;
+    padding-bottom: 0.3em;
+    margin-bottom: 2em;
+  }
+}
 
 .topBar {
   margin: 0 auto;
@@ -996,9 +1283,93 @@ nav ul {
   margin-top: 0.3em;
   margin-bottom: 0.3em;
 }
+@media (min-width: 500px) {
+  .topBar {
+    padding: 0em 1em;
+  }
+}
 
 .rightHolderTopBar {
   min-width: 11em;
+}
+@media (min-width: 500px) {
+  .rightHolderTopBar {
+    width: 65%;
+  }
+}
+.rightHolderTopBar ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media (min-width: 960px) {
+  .rightHolderTopBar {
+    width: 50%;
+  }
+}
+
+.langDiv {
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+@media (min-width: 500px) {
+  .langDiv {
+    display: flex;
+    flex-direction: row;
+    width: 6em;
+    justify-content: space-between;
+  }
+}
+
+.flagga {
+  width: 1em;
+  height: 24px;
+  width: 24px;
+}
+
+.phoneDiv {
+  display: none;
+}
+@media (min-width: 500px) {
+  .phoneDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .phoneDiv span:first-of-type {
+    margin-right: 0.6em;
+  }
+}
+
+.downArrow {
+  height: 18px;
+}
+
+.leftHolderTopBar {
+  display: none;
+}
+@media (min-width: 500px) {
+  .leftHolderTopBar {
+    display: flex;
+    max-height: 50px;
+  }
+}
+
+.topBarLogos img {
+  max-height: 35px;
+  margin-right: 1em;
+}
+
+.extraInfoContainer {
+  width: 100%;
+  max-width: 960px;
+}
+@media (min-width: 500px) {
+  .extraInfoContainer {
+    order: 3;
+    margin-top: 2em;
+  }
 }
 
 .extraInfoWrapper {
@@ -1006,6 +1377,12 @@ nav ul {
   border: dotted #EE3F3F 3px;
   display: flex;
   padding: 0.3em;
+}
+@media (min-width: 500px) {
+  .extraInfoWrapper {
+    padding: 1em 2em;
+    margin-top: 2em;
+  }
 }
 
 .warningIconWrapper img {
@@ -1020,13 +1397,21 @@ nav ul {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
-  float: left;
+}
+@media (min-width: 500px) {
+  .infoTextWrapper h2 {
+    font-size: 2.5rem;
+  }
 }
 .infoTextWrapper p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
-  float: left;
   padding-left: 0.5em;
+}
+@media (min-width: 500px) {
+  .infoTextWrapper p {
+    font-size: 1.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
