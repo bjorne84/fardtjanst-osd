@@ -1,6 +1,18 @@
 @use '_fonts.scss' as *;
 @use '_colors.scss' as *;
 @use '_mixins.scss' as *;
+
+footer {
+  @include padda {
+    padding-top: 7em;
+  }
+  @include desktop {
+    padding-top: 12em;
+  }
+  @include bigDesk {
+    padding-top: 16em;
+  }
+}
 .lightBlueFooter {
     width: 100%;
     background-color: $themeLightBlue;
@@ -72,6 +84,11 @@
   display: none;
   @include padda {
     display: block;
+    height: 30em;
+  }
+  @include desktop {
+    display: block;
+    height: 20em;
   }
 }
 
@@ -92,6 +109,7 @@
 .teleWrapper {
 padding-bottom: 2em;
 padding-top: 4em;
+max-width: 600px;
 border-bottom: dotted 3px $white;
  h3 {
    margin-top: 1.6em;
@@ -104,6 +122,9 @@ border-bottom: dotted 3px $white;
   
   img {
     max-width: 3.4em;
+        @include desktop {
+          max-width: 8em;
+        }
   }
   justify-content: space-between;
   h2 {
@@ -133,7 +154,13 @@ border-bottom: dotted 3px $white;
 .li-extra-padding {
   margin-top: 1.4em;
 }
-
+.copyRightWrapper {
+  padding-bottom: 3em;
+  padding-top: 3em;
+  @include padda {
+    min-height: 20em;
+  }
+}
 .textCopy {
   padding: 2em 0em 1em 0em;
   margin: 0 auto;
@@ -149,3 +176,4 @@ border-bottom: dotted 3px $white;
     width: 100%;
   }
 }
+

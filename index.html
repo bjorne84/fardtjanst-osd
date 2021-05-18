@@ -293,143 +293,157 @@
             </div>
           </fieldset>
           <div class="lineDiv"></div>
-          <fieldset class="fieldSetting maxField">
-            <legend class="showLegend">När vill du vara framme?</legend>
-            <div class="dateWrapper">
-              <div class="dateBoxWrapper">
-                <label class="labelContainer dateLabel h2Label h3Label">
-                  Idag
-                  <input type="radio" checked="checked" name="radio" />
-                  <span class="checkmark radioStyle"></span>
-                </label>
-                <label class="labelContainer dateLabel h2Label h3Label"
-                  >Imorgon
-                  <input type="radio" name="radio" />
-                  <span class="checkmark radioStyle"></span>
-                </label>
-                <label class="labelContainer dateLabel h2Label h3Label"
-                  >Välj datum
-                  <input type="radio" name="radio" />
-                  <span class="checkmark radioStyle"></span>
-                </label>
-              </div>
-              <div class="dateInWrapper">
-                <label for="inDate">År / Månad / År</label>
-                <div class="inputFieldsIconWrapper">
+          <div class="bigScreenDubbelRows">
+            <div class="rowLeftIndex">
+              <fieldset class="fieldSetting maxField">
+                <legend class="showLegend">När vill du vara framme?</legend>
+                <div class="dateWrapper">
+                  <div class="dateBoxWrapper">
+                    <label class="labelContainer dateLabel h2Label h3Label">
+                      Idag
+                      <input type="radio" checked="checked" name="radio" />
+                      <span class="checkmark radioStyle"></span>
+                    </label>
+                    <label class="labelContainer dateLabel h2Label h3Label"
+                      >Imorgon
+                      <input type="radio" name="radio" />
+                      <span class="checkmark radioStyle"></span>
+                    </label>
+                    <label class="labelContainer dateLabel h2Label h3Label"
+                      >Välj datum
+                      <input type="radio" name="radio" />
+                      <span class="checkmark radioStyle"></span>
+                    </label>
+                  </div>
+                  <div class="dateInWrapper">
+                    <label for="inDate">År / Månad / År</label>
+                    <div class="inputFieldsIconWrapper">
+                      <input
+                        class="inputSettings"
+                        type="date"
+                        id="inDate"
+                        name="inDate"
+                      />
+                      <img
+                        src="images/Calendar.svg"
+                        alt="Ikon föreställande kalender"
+                      />
+                    </div>
+                  </div>
+                  <label class="h3Label" for="timeIn">Klockan:</label>
                   <input
-                    class="inputSettings"
-                    type="date"
-                    id="inDate"
-                    name="inDate"
-                  />
-                  <img
-                    src="images/Calendar.svg"
-                    alt="Ikon föreställande kalender"
+                    class="inputTime"
+                    type="time"
+                    value="16:32:55"
+                    id="timeIn"
+                    name="timeIn"
+                    min="00:00"
+                    max="23:59"
+                    required
                   />
                 </div>
-              </div>
-              <label class="h3Label" for="timeIn">Klockan:</label>
-              <input
-                class="inputTime"
-                type="time"
-                value="16:32:55"
-                id="timeIn"
-                name="timeIn"
-                min="00:00"
-                max="23:59"
-                required
-              />
-            </div>
-          </fieldset>
+              </fieldset>
 
-          <div class="takeTimeWrapper">
-            <p>Resan beräknas ta 27 minuter, hämtar dig</p>
-            <div class="klockanWrapp">
-              <span id="klockanText">KL:</span>
-              <div class="klBackground">
-                <span>20:52</span>
+              <div class="takeTimeWrapper">
+                <p>Resan beräknas ta 27 minuter, hämtar dig</p>
+                <div class="klockanWrapp">
+                  <span id="klockanText">KL:</span>
+                  <div class="klBackground">
+                    <span>20:52</span>
+                  </div>
+                </div>
               </div>
+              <div class="taxainfo">
+                <p>
+                  Idag söndag gäller färdtjänsttaxa (priser för färdtjänst)
+                  mellan kl 08:00 - 24:00.
+                </p>
+                <a class="underLineLink" href="#">Läs mer..</a>
+              </div>
+              <h2 class="aterkommandeLink">
+                <a href="#">Boka återkommande resa...</a>
+              </h2>
             </div>
-          </div>
-          <div class="taxainfo">
-            <p>
-              Idag söndag gäller färdtjänsttaxa (priser för färdtjänst) mellan
-              kl 08:00 - 24:00.
-            </p>
-            <a class="underLineLink" href="#">Läs mer..</a>
-          </div>
-          <div class="lineDiv"></div>
-          <fieldset class="fieldSetting">
-            <legend class="showLegend">Skall någon följa med på resan?</legend>
-            <div class="checkBoxWrapper padding-top">
-              <label class="labelContainer labelProcent h2Label h3Label"
-                >Ledsagare
-                <input type="checkbox" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="labelContainer labelProcent h2Label h3Label"
-                >Medresenär (+30kr)
-                <input type="checkbox" />
-                <span class="checkmark"></span>
-              </label>
-            </div>
-          </fieldset>
-          <div class="lineDiv"></div>
-          <fieldset class="fieldSetting">
-            <legend class="showLegend">Tar du med dig något hjälpmedel?</legend>
-            <div class="checkBoxWrapper padding-top">
-              <label class="labelContainer labelProcent h2Label h3Label"
-                >Rullstol
-                <input type="checkbox" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="labelContainer labelProcent h2Label h3Label"
-                >Permobil
-                <input type="checkbox" />
-                <span class="checkmark"></span>
-              </label>
-            </div>
-          </fieldset>
-          <div class="lineDiv"></div>
-          <fieldset class="fieldSetting fieldSetting2 workTravelField">
-            <legend class="showLegend">
-              Är det en resa till och från arbete, dagverksamhet eller studier?
-            </legend>
+            <div class="lineDiv"></div>
+            <div class="rowRightIndex">
+              <fieldset class="fieldSetting">
+                <legend class="showLegend">
+                  Skall någon följa med på resan?
+                </legend>
+                <div class="checkBoxWrapper padding-top">
+                  <label class="labelContainer labelProcent h2Label h3Label"
+                    >Ledsagare
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="labelContainer labelProcent h2Label h3Label"
+                    >Medresenär (+30kr)
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </fieldset>
+              <div class="lineDiv"></div>
+              <fieldset class="fieldSetting">
+                <legend class="showLegend">
+                  Tar du med dig något hjälpmedel?
+                </legend>
+                <div class="checkBoxWrapper padding-top">
+                  <label class="labelContainer labelProcent h2Label h3Label"
+                    >Rullstol
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="labelContainer labelProcent h2Label h3Label"
+                    >Permobil
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </fieldset>
+              <div class="lineDiv"></div>
+              <fieldset class="fieldSetting fieldSetting2 workTravelField">
+                <legend class="showLegend">
+                  Är det en resa till och från arbete, dagverksamhet eller
+                  studier?
+                </legend>
 
-            <div class="checkBoxWrapper">
-              <label class="labelContainer h2Label h3Label"
-                >Nej
-                <input type="radio" checked="checked" name="radioWork" />
-                <span class="checkmark radioStyle"></span>
-              </label>
-              <label class="labelContainer h2Label h3Label"
-                >Ja
-                <input type="radio" name="radioWork" />
-                <span class="checkmark radioStyle"></span>
-              </label>
-            </div>
-          </fieldset>
-          <div class="lineDiv"></div>
-          <div class="flexWidht">
-            <div class="checkOutWrapper">
-              <div class="flexCheckout"></div>
-              <div class="checkOutFlex priceWrapper">
-                <span class="spanOne">Kostnad:</span
-                ><span class="spanTwo">30 kr</span>
+                <div class="checkBoxWrapper">
+                  <label class="labelContainer h2Label h3Label"
+                    >Nej
+                    <input type="radio" checked="checked" name="radioWork" />
+                    <span class="checkmark radioStyle"></span>
+                  </label>
+                  <label class="labelContainer h2Label h3Label"
+                    >Ja
+                    <input type="radio" name="radioWork" />
+                    <span class="checkmark radioStyle"></span>
+                  </label>
+                </div>
+              </fieldset>
+              <div class="lineDiv"></div>
+              <div class="flexWidht">
+                <div class="checkOutWrapper">
+                  <div class="flexCheckout"></div>
+                  <div class="checkOutFlex priceWrapper">
+                    <span class="spanOne">Kostnad:</span
+                    ><span class="spanTwo">30 kr</span>
+                  </div>
+                  <div class="checkOutFlex travelsLeftWrapper">
+                    <span>Resor till färdjänsttaxa kvar i decemeber:</span
+                    ><span>15 av (26 st)</span>
+                  </div>
+                </div>
               </div>
-              <div class="checkOutFlex travelsLeftWrapper">
-                <span>Resor till färdjänsttaxa kvar i decemeber:</span
-                ><span>15 av (26 st)</span>
+              <div class="bookWrapper">
+                <a class="underLineLink" href="#återkommande"
+                  >Boka återkommande resa</a
+                >
+                <button type="submit" class="standardBtn accentBtn">
+                  Boka resa
+                </button>
               </div>
             </div>
-          </div>
-          <div class="bookWrapper">
-            <a class="underLineLink" href="#återkommande"
-              >Boka återkommande resa</a
-            >
-            <button type="submit" class="standardBtn accentBtn">
-              Boka resa
-            </button>
           </div>
         </form>
       </div>

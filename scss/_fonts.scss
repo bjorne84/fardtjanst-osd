@@ -10,7 +10,21 @@ $infoText: Arial, Helvetica, sans-serif;
 $longPtext: Verdana, Geneva, Tahoma, sans-serif;
 
 
-$fontSizeP: 1.4rem;
+$fontSizeP: 1.8rem;
+@mixin fontSizeMix {
+    @media (min-width: 500px) {
+        $fontSizeP: 2rem;
+    }
+}
+@include padda {
+    $fontSizeP: 1.8rem;
+}
+@include desktop {
+    $fontSizeP: 2rem;
+}
+
+$h3fontSize: 2rem;
+
 $btnFontSizeMobile: 1.4rem;
 
 $fontSizePforPadda: 1.8rem;
@@ -46,7 +60,7 @@ p {
         font-size: 1.8rem;
     }
     @include desktop {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
 }
 

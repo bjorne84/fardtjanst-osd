@@ -1,4 +1,6 @@
 @use '_colors.scss' as *;
+@use '_mixins.scss' as *;
+
 main {
      margin: 0 auto;
 
@@ -32,3 +34,13 @@ main {
      max-width: 400px;
  }
 
+// dubelrows for big screen and the indexpage
+.bigScreenDubbelRows {
+    @include bigDesk {
+        display: flex;
+    }
+}
+
+.rowLeftIndex {
+    width: 50%;
+}

@@ -292,22 +292,32 @@ justify-content: end;
 .priceWrapper {
     border-bottom: solid 1px $sandBorder;
     span {
-        font-size: 1.6rem;
+        font-size: $fontSizeP;
     }
     span:nth-child(2) {
         font-size: 2rem;
+        @include padda {
+            font-size: 2.6rem;
+        }
         font-weight: 800;
     }
 }
 
+.aterkommandeLink {
+    display: none;
+    @include bigDesk {
+        display: block;
+        margin-left: 0.5em;
+    }
+}
 .travelsLeftWrapper {
     padding-top: 1em;
     span:nth-child(1) {
-        font-size: 1.4rem;
+        font-size: $fontSizeP;
         font-weight: 500;
     }
     span:nth-child(2) {
-        font-size: 1.4rem;
+        font-size: $fontSizeP;
         font-weight: 700;
     }
 }
