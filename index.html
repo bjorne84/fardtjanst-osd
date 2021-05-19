@@ -69,7 +69,11 @@
               </button>
             </div>
             <div class="hamburgerWrapper">
-              <button class="hamburgerBtn btnText" aria-expanded="false">
+              <button
+                aria-label="Öppna meny"
+                class="hamburgerBtn btnText"
+                aria-expanded="false"
+              >
                 <img
                   src="images/HamburgerMenu.svg"
                   alt="Menyknapp, öppna meny"
@@ -82,7 +86,11 @@
           <div class="mobileTopLine"></div>
           <nav role="navigation" aria-label="Primary menu">
             <div class="closeBtnWrapper">
-              <button onclick="closeFunction()" class="closeBtn BtnText">
+              <button
+                aria-label="Stäng meny"
+                onclick="closeFunction()"
+                class="closeBtn BtnText"
+              >
                 <img
                   src="images/Close.svg"
                   alt="Ikon för att stänga naviagationen"
@@ -123,15 +131,15 @@
           <!-- For icons and stuff, only show on screensize 500px and more-->
           <div class="leftHolderTopBar">
             <div class="topBarLogos">
-              <a href="#">
+              <a href="#" aria-hidden="true" tabindex="-1">
                 <img
                   src="images/ostersunds-kommun-w250.png"
                   alt="Logotyp Östersunds kommun"
                 />
               </a>
             </div>
-            <div class="topBarLogos">
-              <a href="#">
+            <div class="topBarLogos" aria-hidden="true">
+              <a href="#" aria-hidden="true" tabindex="-1">
                 <img src="images/jamttaxi_2.png" alt="Logotyp Jämttaxi AB" />
               </a>
             </div>
@@ -139,7 +147,11 @@
           <div class="rightHolderTopBar">
             <ul>
               <li>
-                <div class="phoneDiv">
+                <div
+                  class="phoneDiv"
+                  tabindex="1"
+                  aria-labelledby="telefonBokning"
+                >
                   <span>
                     <img
                       class="flagga"
@@ -147,13 +159,17 @@
                       alt="ikon telefon"
                     />
                   </span>
-                  <span class="spanInfoBtnText">
+                  <span id="telefonBokning" class="spanInfoBtnText">
                     Boka via telefon: 063-14 15 80</span
                   >
                 </div>
               </li>
               <li>
-                <div class="langDiv">
+                <button
+                  class="langDiv"
+                  tabindex="1"
+                  aria-labelledby="Öppna meny för att välja språk"
+                >
                   <span>
                     <img
                       class="flagga"
@@ -169,15 +185,15 @@
                       alt="ikon nedåtpil"
                     />
                   </span>
-                </div>
+                </button>
               </li>
               <li>
-                <button class="logOutBtn">
+                <button tabindex="1" class="logOutBtn" aria-labelledby="logout">
                   <img
                     src="images/Profile.svg"
                     alt="Figur föreställande en gubbe"
                   />
-                  <span class="spanInfoBtnText">Logga ut!</span>
+                  <span id="logOut" class="spanInfoBtnText">Logga ut!</span>
                 </button>
               </li>
             </ul>
@@ -202,11 +218,10 @@
     <main class="maxWidth">
       <div class="mainWrapper">
         <section class="mainHeader">
-          <h1 tabindex="0">Boka resa</h1>
-          <p tabindex="0">
-            Är det en enskild eller en återkommande resa du vill boka?
-          </p>
+          <h1 id="boka" tabindex="0">Boka resa</h1>
+
           <nav id="typeOfTrip" role="navigation" aria-label="Secondary menu">
+            <p>Är det en enskild eller en återkommande resa du vill boka?</p>
             <ul
               class="ulTypeOfTrip"
               aria-label="Välj om det är en enskild resa eller återkommande du vill boka"
@@ -222,7 +237,7 @@
             </ul>
           </nav>
         </section>
-        <form class="mainForms">
+        <form class="mainForms" aria-labelledby="boka">
           <fieldset class="fieldAddress fieldSetting">
             <legend>Välj adress att åka till och från</legend>
             <div class="addressContainer">
@@ -253,7 +268,7 @@
                 <div class="inputFieldsIconWrapper">
                   <input
                     type="text"
-                    id="addressTo"
+                    id="addressPickupinput"
                     placeholder="Från adress..."
                   />
                   <div class="inputIconWrapper">
@@ -295,11 +310,20 @@
           <div class="lineDiv"></div>
           <div class="bigScreenDubbelRows">
             <div class="rowLeftIndex">
-              <fieldset class="fieldSetting maxField">
-                <legend class="showLegend">När vill du vara framme?</legend>
+              <fieldset
+                class="fieldSetting maxField"
+                aria-labelledby="legendWhen"
+                tabindex="0"
+              >
+                <legend id="legendWhen" class="showLegend">
+                  När vill du vara framme?
+                </legend>
                 <div class="dateWrapper">
                   <div class="dateBoxWrapper">
-                    <label class="labelContainer dateLabel h2Label h3Label">
+                    <label
+                      id="labelToday"
+                      class="labelContainer dateLabel h2Label h3Label"
+                    >
                       Idag
                       <input type="radio" checked="checked" name="radio" />
                       <span class="checkmark radioStyle"></span>
@@ -323,6 +347,7 @@
                         type="date"
                         id="inDate"
                         name="inDate"
+                        role="dialog"
                       />
                       <img
                         src="images/Calendar.svg"
@@ -344,17 +369,22 @@
                 </div>
               </fieldset>
 
-              <div class="takeTimeWrapper">
-                <p>Resan beräknas ta 27 minuter, hämtar dig</p>
+              <div
+                class="takeTimeWrapper"
+                tabindex="0"
+                role="contentinfo"
+                aria-labelledby="pWhen klockanText timeWhen"
+              >
+                <p id="pWhen">Resan beräknas ta 27 minuter, hämtar dig</p>
                 <div class="klockanWrapp">
                   <span id="klockanText">KL:</span>
                   <div class="klBackground">
-                    <span>20:52</span>
+                    <span id="timeWhen">20:52</span>
                   </div>
                 </div>
               </div>
-              <div class="taxainfo">
-                <p>
+              <div class="taxainfo" tabindex="0" aria-labelledby="ptaxiInfo">
+                <p id="ptaxiInfo">
                   Idag söndag gäller färdtjänsttaxa (priser för färdtjänst)
                   mellan kl 08:00 - 24:00.
                 </p>
@@ -366,8 +396,12 @@
             </div>
             <div class="lineDiv"></div>
             <div class="rowRightIndex">
-              <fieldset class="fieldSetting">
-                <legend class="showLegend">
+              <fieldset
+                class="fieldSetting"
+                aria-labelledby="legendCompany"
+                tabindex="0"
+              >
+                <legend id="legendCompany" class="showLegend">
                   Skall någon följa med på resan?
                 </legend>
                 <div class="checkBoxWrapper padding-top">
@@ -384,8 +418,12 @@
                 </div>
               </fieldset>
               <div class="lineDiv"></div>
-              <fieldset class="fieldSetting">
-                <legend class="showLegend">
+              <fieldset
+                class="fieldSetting"
+                aria-labelledby="legendHelp"
+                tabindex="0"
+              >
+                <legend id="legendHelp" class="showLegend">
                   Tar du med dig något hjälpmedel?
                 </legend>
                 <div class="checkBoxWrapper padding-top">
@@ -402,8 +440,12 @@
                 </div>
               </fieldset>
               <div class="lineDiv"></div>
-              <fieldset class="fieldSetting fieldSetting2 workTravelField">
-                <legend class="showLegend">
+              <fieldset
+                class="fieldSetting fieldSetting2 workTravelField"
+                aria-labelledby="legendTypeOfTravel"
+                tabindex="0"
+              >
+                <legend id="legendTypeOfTravel" class="showLegend">
                   Är det en resa till och från arbete, dagverksamhet eller
                   studier?
                 </legend>
@@ -423,15 +465,20 @@
               </fieldset>
               <div class="lineDiv"></div>
               <div class="flexWidht">
-                <div class="checkOutWrapper">
+                <div
+                  class="checkOutWrapper"
+                  tabindex="0"
+                  aria-labelledby="sum somInkr travelLeft numberTravelLeft"
+                >
                   <div class="flexCheckout"></div>
                   <div class="checkOutFlex priceWrapper">
-                    <span class="spanOne">Kostnad:</span
-                    ><span class="spanTwo">30 kr</span>
+                    <span id="sum" class="spanOne">Kostnad:</span
+                    ><span id="somInkr" class="spanTwo">30 kr</span>
                   </div>
                   <div class="checkOutFlex travelsLeftWrapper">
-                    <span>Resor till färdjänsttaxa kvar i decemeber:</span
-                    ><span>15 av (26 st)</span>
+                    <span id="travelLeft"
+                      >Resor till färdjänsttaxa kvar i decemeber:</span
+                    ><span id="numberTravelLeft">15 av (26 st)</span>
                   </div>
                 </div>
               </div>
@@ -532,8 +579,8 @@
                 >
               </li>
             </ul>
-            <h3>Postadress:</h3>
-            <ul class="li-p-wrapper" tabindex="0">
+            <h3 id="postAddress">Postadress:</h3>
+            <ul class="li-p-wrapper" tabindex="0" aria-labelledby="postAddress">
               <li>
                 <p>Taxi Östersund AB</p>
               </li>
