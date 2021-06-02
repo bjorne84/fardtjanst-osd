@@ -168,7 +168,7 @@
                 <button
                   class="langDiv"
                   tabindex="1"
-                  aria-labelledby="Öppna meny för att välja språk"
+                  aria-label="Öppna meny för att välja språk"
                 >
                   <span>
                     <img
@@ -188,7 +188,7 @@
                 </button>
               </li>
               <li>
-                <button tabindex="1" class="logOutBtn" aria-labelledby="logout">
+                <button tabindex="1" class="logOutBtn" aria-labelledby="logOut">
                   <img
                     src="images/Profile.svg"
                     alt="Figur föreställande en gubbe"
@@ -221,11 +221,10 @@
           <h1 id="boka" tabindex="0">Boka resa</h1>
 
           <nav id="typeOfTrip" role="navigation" aria-label="Secondary menu">
-            <p>Är det en enskild eller en återkommande resa du vill boka?</p>
-            <ul
-              class="ulTypeOfTrip"
-              aria-label="Välj om det är en enskild resa eller återkommande du vill boka"
-            >
+            <p id="sec-nav-text">
+              Är det en enskild eller en återkommande resa du vill boka?
+            </p>
+            <ul class="ulTypeOfTrip" aria-labelledby="sec-nav-text">
               <li>
                 <button class="bookBtn bookBtnActive">Enskild resa</button>
               </li>
