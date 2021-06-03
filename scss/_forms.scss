@@ -373,11 +373,16 @@ justify-content: end;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 3em;
+    @include padda {
+        flex-direction: column;
+    }
     label {
         width: 100%;
         max-width: 305px;
+     
         input {
             width: 78%;
+            font-weight: normal;
         }
     }
    
@@ -404,7 +409,7 @@ justify-content: end;
 .btnLinkText:hover {
    
     font-weight: 900;
-    transition: all .2s ease-in-out;
+    transition: all .1s ease-in !important;
 }
 
 
@@ -419,6 +424,17 @@ justify-content: end;
     display: flex;
     flex-direction: column;
     padding-bottom: 1em;
+    label {
+        width: 100%;
+        max-width: 305px;
+        input {
+            width: 78%;
+        }
+    }
+    input {
+        width: 100%;
+        max-width: 305px;
+    }
 }
 .billingAdressWrapper {
     margin-top: 3em;

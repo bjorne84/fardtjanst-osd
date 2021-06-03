@@ -36,9 +36,29 @@ h2 {
   }
 }
 
+.bookingh2 {
+  color: #4B4B4B;
+}
+
 h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+@media (min-width: 500px) {
+  h4 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 960px) {
+  h4 {
+    font-size: 2.6rem;
+  }
 }
 
 p {
@@ -158,6 +178,22 @@ ul {
   list-style-type: none;
 }
 
+.bottomDiv {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.centerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firstArticle {
+  margin-top: 1em;
+}
+
 button {
   transition: 0.3s;
   cursor: pointer;
@@ -238,7 +274,7 @@ button {
   font-weight: bold;
   color: #4B4B4B;
 }
-@media (min-width: 500px) {
+@media (min-width: 960px) {
   .spanInfoBtnText {
     font-size: 1.8rem;
   }
@@ -413,6 +449,10 @@ as checkmarks and normal checkmarks.
   border-radius: 1%;
 }
 
+.checkmarkWhiteBg {
+  background-color: #ffffff;
+}
+
 .labelContainer input ~ .checkmark {
   border: solid 2px #E54D0E;
 }
@@ -526,6 +566,10 @@ as checkmarks and normal checkmarks.
   color: #ffffff;
 }
 
+.fontAwe {
+  margin: 0em 0.5em 0em 0.2em;
+}
+
 .articleSection {
   margin-top: 4em;
 }
@@ -542,20 +586,31 @@ as checkmarks and normal checkmarks.
 .travelWrapper {
   display: flex;
   justify-content: space-between;
+  max-width: 700px;
 }
 .travelWrapper span {
   color: #4F565B;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#bigNumber {
+.bigNumber {
   font-size: 5rem;
   font-weight: 900;
+}
+@media (min-width: 500px) {
+  .bigNumber {
+    font-size: 7rem;
+  }
 }
 
 #littleNumber {
   font-size: 1.4rem;
   font-weight: bold;
+}
+@media (min-width: 500px) {
+  #littleNumber {
+    font-size: 1.6rem;
+  }
 }
 
 .sandBox {
@@ -568,13 +623,141 @@ as checkmarks and normal checkmarks.
 
 .travelBoxLeft {
   width: 70%;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .travelBoxRight {
   width: 25%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
+}
+
+a.skip-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+a.skip-main:focus, a.skip-main:active {
+  color: #fff;
+  background-color: #000;
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 10px 35%;
+  padding: 5px;
+  border-radius: 15px;
+  border: 4px solid yellow;
+  text-align: center;
+  font-size: 1.2em;
+  z-index: 999;
+}
+
+.typeOfBookingWrapper {
+  display: flex;
+  max-width: 450px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (min-width: 500px) {
+  .typeOfBookingWrapper {
+    max-width: 550px;
+  }
+}
+.typeOfBookingWrapper li {
+  padding-top: 1em;
+  margin-right: 0.4em;
+}
+
+.blueLinks {
+  color: #0859A1;
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.blueLinks:hover {
+  font-weight: 900;
+  transition: all 0.1s ease-in;
+}
+
+.listOfBookings {
+  margin-top: 3em;
+}
+
+.bookingArticle {
+  background-color: #F3F3F3;
+  margin: 4em -1em 0em -1em;
+  padding: 2em 1em 1em 1em;
+  border-radius: 0.2em;
+}
+@media (min-width: 500px) {
+  .bookingArticle {
+    padding-left: 2em;
+  }
+}
+@media (min-width: 960px) {
+  .bookingArticle {
+    padding-left: 3em;
+  }
+}
+
+.topBookingArticleWrapper {
+  display: flex;
+}
+
+.imgTopBooking {
+  max-width: 3em;
+  margin-right: 2em;
+}
+@media (min-width: 500px) {
+  .imgTopBooking {
+    max-width: 4em;
+  }
+}
+@media (min-width: 960px) {
+  .imgTopBooking {
+    max-width: 5em;
+  }
+}
+
+.bookingSandWrapper {
+  display: flex;
+  max-width: 700px;
+  color: #1E1E1E;
+}
+.bookingSandWrapper span {
+  color: #4F565B;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bookingSandBox {
+  margin-top: 1em !important;
+}
+
+.bookingAdressWrapper {
+  margin-top: 1.4em;
+}
+
+.bookingSandBox:first-child {
+  margin-right: 0.6em !important;
+}
+@media (min-width: 500px) {
+  .bookingSandBox:first-child {
+    width: 250px;
+  }
 }
 
 main {
@@ -582,6 +765,7 @@ main {
 }
 main h1 {
   margin-bottom: 0.3em;
+  padding-bottom: 6px;
   line-height: 1;
   border-bottom: solid 4px #4B4B4B;
 }
@@ -990,12 +1174,18 @@ label {
   flex-wrap: wrap;
   margin-top: 3em;
 }
+@media (min-width: 500px) {
+  .inputType2Wrapper {
+    flex-direction: column;
+  }
+}
 .inputType2Wrapper label {
   width: 100%;
   max-width: 305px;
 }
 .inputType2Wrapper label input {
   width: 78%;
+  font-weight: normal;
 }
 
 .inputBtnType2Wrapper {
@@ -1017,7 +1207,7 @@ label {
 
 .btnLinkText:hover {
   font-weight: 900;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in !important;
 }
 
 .legendh2 {
@@ -1031,6 +1221,17 @@ label {
   display: flex;
   flex-direction: column;
   padding-bottom: 1em;
+}
+.vertLabelWrapper label {
+  width: 100%;
+  max-width: 305px;
+}
+.vertLabelWrapper label input {
+  width: 78%;
+}
+.vertLabelWrapper input {
+  width: 100%;
+  max-width: 305px;
 }
 
 .billingAdressWrapper {
@@ -1048,6 +1249,9 @@ label {
   margin-right: 3em;
 }
 
+footer {
+  padding-top: 4em;
+}
 @media (min-width: 500px) {
   footer {
     padding-top: 7em;
@@ -1282,6 +1486,7 @@ nav ul {
   .mainHeaderArea1 {
     background-color: #ffffff;
     margin-top: 2em;
+    padding: 0 1em;
   }
 }
 @media (min-width: 960px) {

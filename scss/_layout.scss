@@ -11,3 +11,19 @@
 ul {
     list-style-type: none;
 }
+
+.bottomDiv {
+    display: flex;
+    align-items:flex-end;
+    height: 100%;
+}
+
+.centerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+// first article i sections,pages after h1 heading 
+.firstArticle {
+    margin-top: 1em;
+}

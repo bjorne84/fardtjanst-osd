@@ -3,6 +3,7 @@
 @use '_mixins.scss' as *;
 
 footer {
+  padding-top: 4em;
   @include padda {
     padding-top: 7em;
   }

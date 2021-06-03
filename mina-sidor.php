@@ -1,11 +1,11 @@
 <?php $page = 'myside';
 include('includes/header.php');
 ?>
-<main class="maxWidth">
+<main class="maxWidth" id="main">
     <div class="mainWrapper">
         <section class="mainHeader">
             <h1 tabindex="0">Min sida </h1>
-            <ul>
+            <ul aria-label="Lista med dina uppgifter, adress, fakturor och resor kvar">
                 <li>
 
                     <form class="formType2">
@@ -34,8 +34,8 @@ include('includes/header.php');
                 </li>
                 <li>
                     <form class="formType2">
-                        <fieldset class="fieldSetting2" aria-labelledby="myInfo" tabindex="0">
-                            <legend class="showLegend" id="myInfo">
+                        <fieldset class="fieldSetting2" aria-labelledby="myAdress" tabindex="0">
+                            <legend class="showLegend" id="myAdress">
                                 <h2 class="legendh2">Adressuppgifter</h2>
                             </legend>
                             <div class="vertLabelWrapper">
@@ -63,11 +63,11 @@ include('includes/header.php');
                                     <label id="yesSameAddress" class="labelContainer dateLabel h2Label h3Label">
                                         Ja
                                         <input type="radio" checked="checked" name="radio" />
-                                        <span class="checkmark radioStyle"></span>
+                                        <span class="checkmark checkmarkWhiteBg radioStyle"></span>
                                     </label>
                                     <label class="labelContainer dateLabel h2Label h3Label">Nej
                                         <input type="radio" name="radio" />
-                                        <span class="checkmark radioStyle"></span>
+                                        <span class="checkmark checkmarkWhiteBg radioStyle"></span>
                                     </label>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@ include('includes/header.php');
                         <h2 class="legendh2" tabindex="0">Dina fakturor</h2>
                         <ul class="billingUl">
                             <li>
-                                <table>
+                                <table tabindex="0">
                                     <caption>Faktura april 2021</caption>
                                     <tr>
                                         <th scope="col">Fakturanummer:</th>
@@ -99,11 +99,11 @@ include('includes/header.php');
                                     </tr>
                                     <tr>
                                         <th scope="row">Betald?</th>
-                                        <td class="tdColorRed">Nej</td>
+                                        <td class="tdColorRed"><i class="fontAwe fas fa-times-circle"></i>Nej</td>
                                     </tr>
                                 </table>
                             <li>
-                                <table>
+                                <table tabindex="0">
                                     <caption>Faktura mars 2021</caption>
                                     <tr>
                                         <th scope="col">Fakturanummer:</th>
@@ -123,7 +123,7 @@ include('includes/header.php');
                                     </tr>
                                     <tr>
                                         <th scope="row">Betald?</th>
-                                        <td class="tdColorGreen">Ja</td>
+                                        <td class="tdColorGreen"><i class="fontAwe fas fa-check-circle"></i>Ja</td>
                                     </tr>
                                 </table>
                             </li>
@@ -133,13 +133,15 @@ include('includes/header.php');
                 </li>
                 <li>
                     <article class="greyArticleSection">
-                        <h2 class="legendh2" tabindex="0" aria-label="Resor kvar">Resor kvar</h2>
+                        <h2 class="legendh2" tabindex="0" aria-labelledby="p-travel bigNumber littleNumber">Resor kvar
+                        </h2>
                         <div class="travelWrapper">
                             <div class="travelBoxLeft sandBox">
-                                <p tabindex="0">Resor kvar denna månad till färdtjänsttaxa (färdtjänstpris)</p>
+                                <p id="p-travel">Resor kvar denna månad till färdtjänsttaxa (färdtjänstpris)</p>
                             </div>
                             <div class="travelBoxRight sandBox">
-                                <span id="bigNumber" aria-labelledby="bigNumber" class="spanNumber">9</span>
+                                <span id="bigNumber" class="bigNumber" aria-labelledby="bigNumber"
+                                    class="spanNumber">9</span>
                                 <span id="littleNumber" aria-labelledby="littleNumber" class="spanNumber">Av 26
                                     st</span>
                             </div>

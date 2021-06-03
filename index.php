@@ -1,7 +1,7 @@
 <?php $page = 'home';
 include('includes/header.php');
 ?>
-<main class="maxWidth">
+<main class="maxWidth" id="main">
     <div class="mainWrapper">
         <section class="mainHeader">
             <h1 id="boka" tabindex="0">Boka resa</h1>

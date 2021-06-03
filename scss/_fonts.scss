@@ -52,11 +52,26 @@ h2 {
         font-size: 4rem;
     }
 }
-
+.bookingh2 {
+    color: $headerGrey1;
+}
 h3 {
     font-family: $headingsTwo;
     font-size: 2rem;
 }
+
+h4 {
+    font-family: $headingsTwo;
+    font-size: 1.6rem;
+    font-weight: bold;
+    @include padda {
+        font-size: 2.2rem;
+    }
+    @include desktop {
+        font-size: 2.6rem;
+    }
+}
+
 p {
     font-family: $infoText;
     color: $pGrey;

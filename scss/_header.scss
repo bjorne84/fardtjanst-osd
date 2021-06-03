@@ -39,12 +39,14 @@ nav {
 .mainHeaderArea1 {
     display: flex;
     max-height: 100px;
+    
     margin: 0 auto;
     justify-content: space-between;
     background-color: $backgroundGrey;
     @include padda {
         background-color: $bodyColor;
         margin-top: 2em;
+        padding: 0 1em;
     }
     @include desktop {
         padding: 0em 1em;
