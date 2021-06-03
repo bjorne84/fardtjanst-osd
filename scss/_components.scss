@@ -6,6 +6,7 @@
 
 button {
   transition: 0.3s;
+  cursor: pointer;
 }
 .btnText {
     font-family: $infoText;
@@ -378,3 +379,77 @@ as checkmarks and normal checkmarks.
 }
 
 
+// table billing
+.billingUl {
+  table {
+    margin-top: 1em;
+    color: $blackSandText;
+    font-family: $infoText;
+    font-size: 1.6rem;
+    border-bottom: solid 1px $backgroundGrey;
+    border-top: solid 1px $backgroundGrey;
+    caption {
+      font-size: 1.7rem;
+      background-color: $sandColor;
+    }
+  }
+  tr:nth-child(even){background-color: $backgroundGrey;}
+}
+.tdColorRed {
+  background-color: $redText;
+  font-weight: bold;
+  color: $white;
+
+}
+.tdColorGreen {
+  background-color: #13a506;;
+  font-weight: bold;
+  color: $white;
+
+}
+.articleSection {
+  margin-top: 4em;
+}
+.greyArticleSection {
+  margin: 4em -1em 0em -1em;
+  padding: 0em 1em 0em 1em;
+  background-color: $backgroundGrey;
+  h2 {
+    padding-top: .5em;
+  }
+}
+
+.travelWrapper {
+  display: flex;
+  justify-content: space-between;
+  span {
+    color: $headerGrey2;
+    font-family: $infoText;
+  }
+}
+
+#bigNumber {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+#littleNumber {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.sandBox {
+  margin: 3em 0em;
+  border: solid 1px $sandBorder;
+  border-radius: 0.4em;
+  background-color: $sandColor;
+  padding: 0.4em;
+}
+.travelBoxLeft {
+  width: 70%;
+}
+.travelBoxRight {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

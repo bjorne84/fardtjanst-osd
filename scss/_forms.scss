@@ -18,6 +18,15 @@ input {
         display: none;
     }
 }
+.fieldSetting2 {
+    
+    margin-bottom: 0em;
+    border: none;
+    legend {
+        display: none;
+    }
+}
+
 
 .maxField {
     @include padda {
@@ -308,6 +317,7 @@ justify-content: end;
     @include bigDesk {
         display: block;
         margin-left: 0.5em;
+        font-size: 2rem;
     }
 }
 .travelsLeftWrapper {
@@ -348,4 +358,78 @@ justify-content: end;
      button {
         padding: 0 1.3em;
      }
+}
+
+
+// mina sidor
+
+.formType2 {
+    background-color: $backgroundGrey;
+    margin: 5em -1em 0em -1em;
+    padding: 1em 0em;
+}
+.inputType2Wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    label {
+        width: 100%;
+        max-width: 305px;
+        input {
+            width: 78%;
+        }
+    }
+   
+}
+
+.inputBtnType2Wrapper {
+    width: 100%;
+    max-width: 305px;
+    display: flex;
+    justify-content: end;
+}
+
+// the button
+.btnLinkText {
+    border: none;
+    background-color: transparent;
+    color: $blueLinkText;
+    text-decoration: underline;
+    font-family: $infoText;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.btnLinkText:hover {
+   
+    font-weight: 900;
+    transition: all .2s ease-in-out;
+}
+
+
+.legendh2 {
+    color: $headerGrey1;
+    font-family: $infoText;
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+.vertLabelWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+.billingAdressWrapper {
+    margin-top: 3em;
+}
+.billingBoxAdressWrapper {
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-bottom: 1.5em;
+margin-top: 1em;
+label {
+    margin-right: 3em;
+}
 }

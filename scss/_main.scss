@@ -42,5 +42,8 @@ main {
 }
 
 .rowLeftIndex {
-    width: 50%;
+    @include padda {
+        width: 50%; 
+    }
+    
 }
