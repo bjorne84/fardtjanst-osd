@@ -59,7 +59,7 @@
             </div>
             <div class="navHolder">
                 <div class="mobileTopLine"></div>
-                <nav role="navigation" aria-label="Primary menu">
+                <nav role="Main-navigation" aria-label="Primary menu">
                     <div class="closeBtnWrapper">
                         <button aria-label="Stäng meny" onclick="closeFunction()" class="closeBtn BtnText">
                             <img src="images/Close.svg" alt="Ikon för att stänga naviagationen" />

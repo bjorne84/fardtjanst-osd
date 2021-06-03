@@ -1,6 +1,7 @@
 <?php $page = 'mybookings';
 include('includes/header.php');
 ?>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Upp</button>
 <main class="maxWidth" id="main">
     <div class="mainWrapper">
         <section class="mainHeader">
