@@ -27,3 +27,9 @@ ul {
 .firstArticle {
     margin-top: 1em;
 }
+
+.mainHeader {
+    h1 {
+        overflow-wrap: break-word; 
+    }
+}

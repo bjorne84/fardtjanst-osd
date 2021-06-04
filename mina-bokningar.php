@@ -50,15 +50,7 @@ include('includes/header.php');
                                 </div>
 
                             </div>
-                            <div class="changeBookingWrapper">
-                                <div class="bookingActionWrapper">
-                                    <button class="btnLinkText" type="submit">Avboka</button>
-                                </div>
 
-                                <div class="bookingActionWrapper">
-                                    <button class="btnLinkText" type="submit">Ändra bokning</button>
-                                </div>
-                            </div>
                         </div>
                         <div class="bookingAdressWrapper">
                             <h4>Vi kör dig till:</h4>
@@ -106,15 +98,7 @@ include('includes/header.php');
                                     <span class="bigNumber">23:05</span>
                                 </div>
                             </div>
-                            <div class="changeBookingWrapper">
-                                <div class="bookingActionWrapper">
-                                    <button class="btnLinkText" type="submit">Avboka</button>
-                                </div>
 
-                                <div class="bookingActionWrapper">
-                                    <button class="btnLinkText" type="submit">Ändra bokning</button>
-                                </div>
-                            </div>
                         </div>
                         <div class="bookingAdressWrapper">
                             <h4>Vi kör dig till:</h4>

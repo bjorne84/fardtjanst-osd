@@ -68,7 +68,7 @@
                     </div>
                     <ul class="li-p-wrapper" tabindex="0">
                         <li>
-                            <a class="whiteLink" href="#">Kontakta oss via formulär</a>
+                            <a class="whiteLink" href="information.php">Kontakta oss via formulär</a>
                         </li>
                         <li>
                             <p>e-post:</p>
@@ -77,15 +77,15 @@
                         </li>
                     </ul>
                     <h3 id="postAddress">Postadress:</h3>
-                    <ul class="li-p-wrapper" tabindex="0" aria-labelledby="postAddress">
+                    <ul class="li-p-wrapper" tabindex="0" aria-labelledby="postAddress address1 address2 address3">
                         <li>
-                            <p>Taxi Östersund AB</p>
+                            <p id="address1">Taxi Östersund AB</p>
                         </li>
                         <li>
-                            <p>Storsjöstråket 19</p>
+                            <p id="address2">Storsjöstråket 19</p>
                         </li>
                         <li>
-                            <p>831 34 Östersund</p>
+                            <p id="address3">831 34 Östersund</p>
                         </li>
                     </ul>
                 </div>
@@ -97,7 +97,7 @@
                     </div>
                     <ul class="li-p-wrapper" tabindex="0">
                         <li>
-                            <a class="whiteLink" href="#">Tillgänglighetsredogörelse</a>
+                            <a class="whiteLink" href="tillganglighetsredogorelse.php">Tillgänglighetsredogörelse</a>
                         </li>
                         <li>
                             <a class="whiteLink" href="#">Om kakor</a>

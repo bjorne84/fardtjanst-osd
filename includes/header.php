@@ -9,6 +9,8 @@
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Färdtjänst Östersund - Boka din resa här.</title>
+    <meta name="description" content="Färdtjänst bokar du smidigt här, vi kör i hela Östersunds kommun.
+Öppettider färdtjänsttaxa: Mån-fre 08-22, Lör-Sön och helgdag 10-22." />
 </head>
 
 <body>
@@ -16,8 +18,8 @@
             class="UpSpan"></span></button>
     <header>
         <!--Only small blue line form mobile-->
-        <a class="skip-main" id="skip-main" href="#main" tabindex="1" aria-labelledby="skip-main">Skip to main
-            content</a>
+        <a class="skip-main" id="skip-main" href="#main" tabindex="1" aria-labelledby="skip-main">Fortsätt till
+            huvudinnehållet</a>
         <div class="mobileTopLine"></div>
         <!-- uses max-width class 1220px-->
         <div class="mainHeaderWrapper">
@@ -61,7 +63,7 @@
             </div>
             <div class="navHolder">
                 <div class="mobileTopLine"></div>
-                <nav role="Main-navigation" aria-label="Primary menu">
+                <nav aria-label="Primary menu">
                     <div class="closeBtnWrapper">
                         <button aria-label="Stäng meny" onclick="closeFunction()" class="closeBtn BtnText">
                             <img src="images/Close.svg" alt="Ikon för att stänga naviagationen" />

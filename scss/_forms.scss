@@ -387,6 +387,13 @@ justify-content: end;
     }
    
 }
+// wrapper around form divs
+.elFlexo {
+    @include padda {
+        display: flex;
+        
+    }
+}
 
 .inputBtnType2Wrapper {
     width: 100%;

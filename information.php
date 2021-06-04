@@ -5,7 +5,7 @@ include('includes/header.php');
     <div class="mainWrapper">
         <section class="mainHeader">
             <h1 tabindex="0">Information</h1>
-            <nav role="secondary-navigation" class="infoNav" aria-label="Vanliga frågor">
+            <nav class="infoNav" aria-label="Secondery menu, Vanliga frågor">
                 <ul>
                     <li>
                         <p><a href="#info1">Vad är färdtjänst</a></p>
@@ -148,7 +148,7 @@ include('includes/header.php');
             <article class="articleInfo" id="info5">
                 <div class="infoSideDiv">
                     <h2>Klargörande kring färdtjänst och sjukresor</h2>
-                    <h4 class="fontRed">Färdtjänst får inte användas för sjukresor.</h4><br>
+                    <h3 class="fontRed">Färdtjänst får inte användas för sjukresor.</h3><br>
                     <p>
 
                         Sjukresor bekostas av landstinget.

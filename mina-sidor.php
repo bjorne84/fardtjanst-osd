@@ -6,9 +6,11 @@ include('includes/header.php');
         <section class="mainHeader">
             <h1 tabindex="0">Min sida </h1>
             <ul aria-label="Lista med dina uppgifter, adress, fakturor och resor kvar">
+
                 <li>
 
                     <form class="formType2">
+
                         <fieldset class="fieldSetting2" aria-labelledby="myInfo" tabindex="0">
                             <legend class="showLegend" id="myInfo">
                                 <h2 class="legendh2">Mina uppgifter</h2>
@@ -30,6 +32,7 @@ include('includes/header.php');
                                 </div>
                             </div>
                         </fieldset>
+
                     </form>
                 </li>
                 <li>

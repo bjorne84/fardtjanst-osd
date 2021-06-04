@@ -204,7 +204,7 @@ include('includes/header.php');
         </form>
     </div>
     <div class="lineDiv"></div>
-    <h2><a href="formtest.html">fromtest</a></h2>
+
 </main>
 <?php
 include('includes/footer.php');
