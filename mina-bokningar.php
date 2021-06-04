@@ -38,12 +38,25 @@ include('includes/header.php');
                         <div class="bookingAdressWrapper">
                             <h4>Vi hämtar dig på adress:</h4>
                             <div class="bookingSandWrapper">
+
                                 <div class="bookingSandBox sandBox centerDiv">
                                     <p>Storgatan 31</p>
                                     <p>831 47, Östersund</p>
                                 </div>
+
+
                                 <div class="bookingSandBox sandBox">
                                     <span class="bigNumber">13:45</span>
+                                </div>
+
+                            </div>
+                            <div class="changeBookingWrapper">
+                                <div class="bookingActionWrapper">
+                                    <button class="btnLinkText" type="submit">Avboka</button>
+                                </div>
+
+                                <div class="bookingActionWrapper">
+                                    <button class="btnLinkText" type="submit">Ändra bokning</button>
                                 </div>
                             </div>
                         </div>
@@ -56,6 +69,16 @@ include('includes/header.php');
                                 </div>
                                 <div class="bookingSandBox sandBox">
                                     <span class="bigNumber">14:03</span>
+                                </div>
+                            </div>
+
+                            <div class="changeBookingWrapper">
+                                <div class="bookingActionWrapper">
+                                    <button class="btnLinkText" type="submit">Avboka</button>
+                                </div>
+
+                                <div class="bookingActionWrapper">
+                                    <button class="btnLinkText" type="submit">Ändra bokning</button>
                                 </div>
                             </div>
                         </div>
@@ -83,6 +106,15 @@ include('includes/header.php');
                                     <span class="bigNumber">23:05</span>
                                 </div>
                             </div>
+                            <div class="changeBookingWrapper">
+                                <div class="bookingActionWrapper">
+                                    <button class="btnLinkText" type="submit">Avboka</button>
+                                </div>
+
+                                <div class="bookingActionWrapper">
+                                    <button class="btnLinkText" type="submit">Ändra bokning</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="bookingAdressWrapper">
                             <h4>Vi kör dig till:</h4>
@@ -93,6 +125,15 @@ include('includes/header.php');
                                 </div>
                                 <div class="bookingSandBox sandBox">
                                     <span class="bigNumber">23:16</span>
+                                </div>
+                            </div>
+                            <div class="changeBookingWrapper">
+                                <div class="bookingActionWrapper">
+                                    <button class="btnLinkText" type="submit">Avboka</button>
+                                </div>
+
+                                <div class="bookingActionWrapper">
+                                    <button class="btnLinkText" type="submit">Ändra bokning</button>
                                 </div>
                             </div>
                         </div>

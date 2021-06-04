@@ -40,6 +40,10 @@ h2 {
   color: #4B4B4B;
 }
 
+.h2-dark {
+  color: #1D1F21;
+}
+
 h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
@@ -768,6 +772,17 @@ a.skip-main:focus, a.skip-main:active {
   }
 }
 
+.changeBookingWrapper {
+  display: flex;
+  max-width: 70%;
+  justify-content: space-between;
+}
+@media (min-width: 500px) {
+  .changeBookingWrapper {
+    max-width: 480px;
+  }
+}
+
 .infoNav ul {
   list-style-type: disc;
   margin-left: 1em;
@@ -823,20 +838,126 @@ a.skip-main:focus, a.skip-main:active {
   font-size: 1.6rem;
   border: none;
   outline: none;
-  background-color: rgba(8, 90, 161, 0.822);
+  background-color: rgba(229, 77, 14, 0.8);
+  box-shadow: 0 5px 10px -4px #707070;
   color: #ffffff;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 #myBtn:hover {
   background-color: rgba(8, 89, 161, 0.9);
 }
 
+.upIcon {
+  font-size: 2.3rem;
+}
+
 .UpSpan {
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 2px;
+}
+
+.ulWrapp {
+  margin-top: 2em;
+}
+
+.contact-ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.open ul {
+  margin-top: 0.7em;
+}
+.open ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.openSand {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.phoneAndAdressWrapper {
+  margin: 4em 0em;
+}
+.phoneAndAdressWrapper article {
+  margin-bottom: 5em;
+}
+@media (min-width: 500px) {
+  .phoneAndAdressWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.dashed-li {
+  border-bottom: dashed 2px #e2e2e2;
+  padding: 1em 0;
+}
+
+.red-li p {
+  color: #D53535;
+}
+
+.divBox {
+  width: 100%;
+}
+
+.labelInputDiv {
+  display: flex;
+  flex-direction: column;
+}
+.labelInputDiv textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+}
+.labelInputDiv input {
+  margin-bottom: 0.8em !important;
+}
+
+@media (min-width: 500px) {
+  .contactForm {
+    max-width: 480px;
+  }
+}
+
+.contactBtnsWrapper {
+  display: flex;
+}
+
+.smallAccentBtn {
+  color: #ffffff;
+  background-color: #E54D0E;
+  transition: 0.3s;
+}
+
+#contactWay {
+  margin: 1em 0 0.3em 0;
+}
+
+.contactBtnsWrapper {
+  margin: 2em 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contactBtnsWrapper button {
+  margin-bottom: 1em;
+  padding: 0.2em 2px;
+}
+
+.greyBtn {
+  color: #ffffff;
+  background-color: #78838D;
+  transition: 0.3s;
+  border: solid 3px #78838D;
 }
 
 main {

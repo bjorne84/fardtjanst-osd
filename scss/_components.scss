@@ -588,6 +588,18 @@ a.skip-main:focus, a.skip-main:active {
   }
 }
 
+.bookingActionWrapper {
+
+}
+.changeBookingWrapper {
+  display: flex;
+  max-width: 70%;
+  justify-content: space-between;
+  @include padda {
+    max-width: 480px;
+  }
+  
+}
 // Information
 
 .infoNav {
@@ -649,18 +661,133 @@ a.skip-main:focus, a.skip-main:active {
   font-size: 1.6rem;
   border: none;
   outline: none;
-  background-color: rgba(8, 90, 161, 0.822);
+  background-color: rgba(229, 77, 14, 0.8);
+  //background-color: rgba(8, 90, 161, 0.822);
+  box-shadow: 0 5px 10px -4px $sandBorder;
   color: $white;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 #myBtn:hover {
   background-color: rgba(8, 89, 161, 0.9);
 }
+.upIcon {
+  font-size: 2.3rem;
+}
 
 .UpSpan {
   font-family: $infoText;
   margin-left: 2px;
+}
+
+
+// contact page
+
+.ulWrapp {
+  margin-top: 2em;
+}
+.contact-ul {
+
+  li {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.open ul {
+  margin-top: .7em;
+  li {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.openSand {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.phoneAndAdressWrapper {
+  margin: 4em 0em;
+  article {
+    margin-bottom: 5em;
+  }
+  @include padda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.dashed-li {
+  border-bottom: dashed 2px $lineColorMiddle;
+  padding: 1em 0;
+}
+
+.red-li {
+  p {
+    color: $redText;
+  }
+
+}
+
+.divBox {
+  width: 100%;
+}
+
+.labelInputDiv {
+  display: flex;
+  flex-direction: column;
+  textarea {
+    font-family: $infoText;
+    font-size: 1.4rem;
+  }
+
+  input {
+    margin-bottom: .8em !important;
+  }
+}
+
+.contactForm {
+  @include padda {
+    max-width: 480px;
+  }
+}
+
+.contactBtnsWrapper {
+  display: flex;
+}
+
+.smallAccentBtn {
+
+color: $white;
+background-color: $accent;
+//padding: 0 1em;
+transition: 0.3s;
+}
+
+#contactWay {
+  margin: 1em 0 .3em 0;
+}
+.contactBtnsWrapper {
+  margin: 2em 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  button {
+    margin-bottom: 1em;
+    padding: .2em 2px;
+  }
+} 
+.greyBtn {
+  color: $white;
+background-color: $formBorder;
+//padding: 0 1em;
+transition: 0.3s;
+border: solid 3px $formBorder;
 }

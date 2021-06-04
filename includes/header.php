@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="upIcon fas fa-angle-double-up"></i><span
+            class="UpSpan"></span></button>
     <header>
         <!--Only small blue line form mobile-->
         <a class="skip-main" id="skip-main" href="#main" tabindex="1" aria-labelledby="skip-main">Skip to main

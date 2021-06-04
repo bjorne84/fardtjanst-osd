@@ -308,13 +308,9 @@ include('includes/header.php');
                 </div>
 
             </article>
-
-
+            <h3>Text lånad från Östersunds kommun om färdtjänst</h3>
         </section>
     </div>
-    <?php
-    include('includes/scrollUp.php');
-    ?>
 </main>
 <?php
 include('includes/footer.php');
