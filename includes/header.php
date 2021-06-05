@@ -26,7 +26,7 @@
             <!--Logotype, search-->
             <div class="mainHeaderArea1 maxWidth">
                 <div class="logoWrapper">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="images/fardtjanst-logo.svg" alt="Logotyp Östersunds färdtjänst" />
                     </a>
                 </div>
